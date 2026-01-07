@@ -31,7 +31,7 @@ const HeroSection = () => {
         <iframe
           width="100%"
           height="100%"
-          src="./public/images/events/mama_concert.mp4"
+          src="./images/events/mama_concert.mp4"
           title="Mama Concert "
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

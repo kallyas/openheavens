@@ -6,16 +6,16 @@ import { Box, Typography } from '@mui/material';
 
 const GallerySection = () => {
   const showcaseImages = [
-    { id: 1, src: './public/images/event-img/img1.jpeg', alt: 'Worship concert crowd' },
-    { id: 2, src: './public/images/event-img/img2.jpeg', alt: 'Concert lighting' },
-    { id: 3, src: './public/images/event-img/img3.jpeg', alt: 'Musician playing' },
-    { id: 4, src: './public/images/event-img/img4.jpeg', alt: 'Concert atmosphere' },
-    { id: 5, src: './public/images/event-img/img5.jpeg', alt: 'Audience enjoying music' },
-    { id: 6, src: './public/images/event-img/img6.jpeg', alt: 'Stage lights' },
-    { id: 7, src: './public/images/event-img/img7.jpeg', alt: 'Microphone' },
-    { id: 8, src: './public/images/event-img/img8.jpeg', alt: 'Concert hands raised' },
-    { id: 9, src: './public/images/event-img/img9.jpeg', alt: 'Singer performing' },
-    { id: 10, src: './public/images/event-img/img10.jpeg', alt: 'Concert finale' },
+    { id: 1, src: 'images/event-img/img1.jpeg', alt: 'Worship concert crowd' },
+    { id: 2, src: 'images/event-img/img2.jpeg', alt: 'Concert lighting' },
+    { id: 3, src: 'images/event-img/img3.jpeg', alt: 'Musician playing' },
+    { id: 4, src: 'images/event-img/img4.jpeg', alt: 'Concert atmosphere' },
+    { id: 5, src: 'images/event-img/img5.jpeg', alt: 'Audience enjoying music' },
+    { id: 6, src: 'images/event-img/img6.jpeg', alt: 'Stage lights' },
+    { id: 7, src: 'images/event-img/img7.jpeg', alt: 'Microphone' },
+    { id: 8, src: 'images/event-img/img8.jpeg', alt: 'Concert hands raised' },
+    { id: 9, src: 'images/event-img/img9.jpeg', alt: 'Singer performing' },
+    { id: 10, src: 'images/event-img/img10.jpeg', alt: 'Concert finale' },
   ];
 
   return (
