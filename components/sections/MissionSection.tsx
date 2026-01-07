@@ -100,9 +100,9 @@ const MissionSection = () => {
               willChange: 'transform',
             }}
           >
-            ONE HEART,
+            ONE GOD,
             <br />
-            ONE VOICE,
+            ONE WORSHIP,
             <br />
             ONE GOD
           </Typography>
@@ -121,8 +121,7 @@ const MissionSection = () => {
               textShadow: '0 2px 8px rgba(0,0,0,0.66), 0 0.5px 1px rgba(0,0,0,0.25)',
             }}
           >
-            Open Heavens is the expression of a city on fire for Jesus. One heart, one sound as
-            we cross into 2026.
+            MAMA CONCERT is a gospel concert experience bringing together believers from all walks of life to worship, connect, and be transformed. Join us for an unforgettable night of powerful music, inspiring messages, and a celebration of faith that unites us all.
           </Typography>
 
           {/* CTA Buttons */}

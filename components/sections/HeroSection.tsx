@@ -89,7 +89,7 @@ const HeroSection = () => {
                     textAlign: 'center'
                     }}
                 >
-                    OPEN<br/>HEAVENS
+                    MAMA <br/>CONCERT
                 </Typography>
             </Box>
 
@@ -116,8 +116,8 @@ const HeroSection = () => {
                     textShadow: '0 2px 4px rgba(0,0,0,0.5)'
                     }}
                 >
-                    THE INTERNATIONAL CENTRE<br/>
-                    6900 AIRPORT RD, MISSISSAUGA, ON L4V 1E8
+                    METRO CONVENTION CENTRE <br/>
+                    255 FRONT ST W, TORONTO, ON M5V 2W6
                 </Typography>
                 </MuiLink>
             </Box>

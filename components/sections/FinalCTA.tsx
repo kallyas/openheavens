@@ -62,7 +62,7 @@ const FinalCTA = () => {
               See You At
             </Typography>
             <Typography variant="h1" sx={{ fontSize: { xs: '2.25rem', md: '3rem', lg: '3.75rem' }, fontWeight: 900, color: 'white', mb: 3, textTransform: 'uppercase', lineHeight: 1.1 }}>
-              Open Heavens 2025
+              Mama Concert 2026
             </Typography>
 
             {/* Venue */}
@@ -139,7 +139,7 @@ const FinalCTA = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <Typography sx={{ mt: 6, color: '#d1d5db', fontSize: '1.125rem' }}>
-                Free Admission • Free Transportation • Family-Friendly
+                CAD $100 &nbsp; • &nbsp; Family-Friendly &nbsp; • &nbsp; Free Parking Available
               </Typography>
             </motion.div>
           </Box>

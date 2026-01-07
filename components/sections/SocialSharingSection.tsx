@@ -44,9 +44,7 @@ const SocialSharingSection = () => {
               lineHeight: 1.7,
             }}
           >
-            Spread the word about Open Heavens grab the digital toolkit, feed posts, story loops,
-            invite cards, and the recap video. So your circle knows there's a free New Year gospel
-            concert waiting for them.
+            Help us revive the city through worship! Share our event poster on your social media and invite your friends to experience an unforgettable night of praise and connection.
           </Typography>
 
           {/* CTA Buttons */}
@@ -75,7 +73,7 @@ const SocialSharingSection = () => {
                 },
               }}
             >
-              REVIVE THE CITY
+              Worship in THE CITY
             </Button>
             <Button
               variant="outlined"

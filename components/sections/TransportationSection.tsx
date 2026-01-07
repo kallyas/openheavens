@@ -45,8 +45,7 @@ const TransportationSection = () => {
               We'll Pick You Up
             </Typography>
             <Typography variant="body1" sx={{ fontSize: '1.125rem', color: '#d1d5db', maxWidth: '48rem', mx: 'auto' }}>
-              Take advantage of our free shuttle service from multiple locations
-              across the Greater Toronto Area. Reserve your spot today!
+              Take advantage of other people moving to the same event by booking a seat to ride along. Reserve your spot today!
             </Typography>
           </Box>
         </motion.div>
@@ -152,7 +151,7 @@ const TransportationSection = () => {
         >
           <Box sx={{ textAlign: 'center' }}>
             <Typography sx={{ color: '#d1d5db', fontSize: '1.125rem', mb: 2 }}>
-              For shuttle inquiries, contact us at:
+              For Shared Transportation inquiries, contact us at:
             </Typography>
             <Typography
               component="a"

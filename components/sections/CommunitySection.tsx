@@ -46,7 +46,7 @@ const CommunitySection = () => {
               >
                 This Could Be You
                 <br />
-                At OH 2025
+                At Mama Concert 2026
               </Typography>
 
               <Typography
@@ -58,10 +58,8 @@ const CommunitySection = () => {
                 }}
               >
                 People just like you, experiencing worship, connection, and
-                transformation. This isn't just an event; it's a movement. A
-                community. A moment where heaven touches earth. Join thousands
-                who've discovered what it means to be part of something greater.
-                Your seat is waiting.
+                transformation. This isn't just a concert but a life-changing experience that brings people together from all walks of life.
+                Join us and be part of something extraordinary Worship , Praise.
               </Typography>
 
               <Button

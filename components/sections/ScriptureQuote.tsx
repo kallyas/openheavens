@@ -103,9 +103,9 @@ const ScriptureQuote = () => {
                 color: '#111827',
               }}
             >
-              The God of glory
+              God Speaks through Worship
             </Box>{' '}
-            appeared to our father Abraham when he was in Mesopotamia, before he dwelt in Haran.&rdquo;
+            lets you experience His presence in a powerful way. As Stephen proclaimed to the Sanhedrin, "The God of glory appeared to our father Abraham when he was in Mesopotamia, before he dwelt in Haran."
           </Typography>
           <Typography
             component="cite"
@@ -116,7 +116,7 @@ const ScriptureQuote = () => {
               fontStyle: 'normal',
             }}
           >
-            Acts 7:2
+            Acts 7:2 (NKJV)
           </Typography>
         </Box>
       </Container>
