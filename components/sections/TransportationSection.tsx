@@ -183,7 +183,7 @@ import React, { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { FaBus, FaDownload } from "react-icons/fa";
 import { Box, Typography, Container, Grid, Button } from "@mui/material";
-import { SHUTTLE_ROUTES, EVENT_INFO } from "@/lib/constants";
+import { JOINED_MOVEMENT , EVENT_INFO } from "@/lib/constants";
 
 const TransportationSection = () => {
   const ref = useRef(null);
@@ -235,7 +235,7 @@ const TransportationSection = () => {
 
         {/* Routes */}
         <Grid container spacing={3} sx={{ mb: 6 }}>
-          {SHUTTLE_ROUTES.map((route, index) => (
+          {JOINED_MOVEMENT.map((route, index) => (
             <Grid item xs={12} md={6} key={route.id}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

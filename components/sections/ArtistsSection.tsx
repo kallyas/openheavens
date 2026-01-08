@@ -31,7 +31,7 @@ const ArtistsSection = () => {
               letterSpacing: '-0.02em',
             }}
           >
-            LEADING VOICES
+            RAISING VOICES TO WORSHIP THE LORD
           </Typography>
           <Typography
             variant="h3"
@@ -43,7 +43,7 @@ const ArtistsSection = () => {
               letterSpacing: '0.05em',
             }}
           >
-            ALL POINTING TO JESUS
+            ALL RAISING VOICES TO JESUS
           </Typography>
         </Box>
 

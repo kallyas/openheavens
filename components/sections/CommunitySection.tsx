@@ -103,7 +103,7 @@ const CommunitySection = () => {
                   transition={{ delay: 0.3 }}
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=2670&auto=format&fit=crop"
+                    src="/images/event-img/img2.jpeg"
                     alt="Community worship"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
@@ -127,7 +127,7 @@ const CommunitySection = () => {
                   transition={{ delay: 0.4 }}
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2670&auto=format&fit=crop"
+                    src="/images/event-img/img10.jpeg"
                     alt="Singing together"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
@@ -140,7 +140,7 @@ const CommunitySection = () => {
                   transition={{ delay: 0.5 }}
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=2670&auto=format&fit=crop"
+                    src="/images/event-img/img8.jpeg"
                     alt="Friends at concert"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />

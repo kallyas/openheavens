@@ -13,8 +13,8 @@ const FinalCTA = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const handleAddToCalendar = () => {
-    const startDate = new Date("2025-12-31T19:00:00");
-    const endDate = new Date("2026-01-01T01:00:00");
+    const startDate = new Date("2026-01-31T19:00:00");
+    const endDate = new Date("2026-11-28T23:59:59");
 
     downloadCalendar(
       EVENT_INFO.title,

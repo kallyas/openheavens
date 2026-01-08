@@ -7,7 +7,7 @@ import Marquee from "@/components/ui/Marquee";
 
 const AnnouncementBanner = () => {
   const announcement =
-    "Join us for Open Heavens Toronto 2025 - A FREE New Year's Eve Gospel Concert • December 31st at The International Centre • Free Admission • Free Transportation • Register Now!";
+    "Join us for Mama Concert 2026 - A ticket at CAD $100 ! The massive Experience worship on November 28th. Get your FREE ticket now!";
 
   const announcements = Array(10).fill(announcement);
 

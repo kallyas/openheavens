@@ -50,7 +50,7 @@ const Footer = () => {
                     fontSize: { xs: '2rem', md: '3rem' }
                 }}
             >
-                OPEN HEAVENS
+                MAMA CONCERT 2026
             </Typography>
 
           <Typography sx={{ mb: 3, maxWidth: '600px', mx: 'auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
@@ -101,7 +101,7 @@ const Footer = () => {
             {/* Resources */}
             <Grid size={{ xs: 12, sm: 4, md: 3 }}>
                 <Typography variant="h6" sx={{ fontWeight: 700, mb: 2, textTransform: 'uppercase' }}>
-                    Open Heavens Resources
+                    Mama Concert Resources
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
                     <a href="#" style={{ color: '#9ca3af', textDecoration: 'none' }}>Get Involved</a>
@@ -133,15 +133,15 @@ const Footer = () => {
                 LOCATION
             </Typography>
             <Typography variant="h6" sx={{ fontWeight: 400 }}>
-                The International Centre,<br />
-                6900 Airport RD Toronto - Hall 5
+               Metro Toronto Convention Centre,<br />
+                255 Front St W, Toronto, ON M5V 2W6
             </Typography>
         </Box>
 
         {/* Copyright */}
         <Box sx={{ textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.1)', pt: 4 }}>
           <Typography sx={{ color: '#9ca3af', fontSize: '0.875rem' }}>
-            Copyright © {new Date().getFullYear()} OPEN HEAVENS TORONTO
+            Copyright © {new Date().getFullYear()} MAMA CONCERT 2026. All rights reserved.
           </Typography>
         </Box>
       </Container>
