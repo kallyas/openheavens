@@ -59,12 +59,12 @@ const ScriptureQuote = () => {
               }}
             >
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=L0ZhSMAzYr8"
+                url="https://www.youtube.com/watch?v=MwjAV_iykoE&list=RDEM7xhpI8RgQFXJCUoMy2aEzA&start_radio=1"
                 width="100%"
                 height="100%"
                 playing={playing}
                 controls
-                light="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=2670&auto=format&fit=crop"
+                light="images/event-img/img3.jpeg"
                 onClickPreview={() => setPlaying(true)}
               />
             </Box>
