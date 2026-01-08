@@ -169,7 +169,8 @@ export const FAQ_DATA = [
     id: 4,
     question: "Is parking available?",
     answer:
-      "Yes, parking is available at Metro Toronto Convention Centre. However, spaces are limited",
+      "Yes, parking is available at Metro Toronto Convention Centre. However, spaces are limited"
+    },
   {
     id: 5,
     question: "What time should I arrive?",
