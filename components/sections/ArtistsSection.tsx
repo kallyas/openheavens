@@ -123,7 +123,7 @@ const ArtistsSection = () => {
                       lineHeight: 1.2,
                     }}
                   >
-                    {artist.shortName || artist.name}
+                    {artist.name}
                   </Typography>
                 </Box>
               </Box>
