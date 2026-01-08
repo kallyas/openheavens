@@ -42,8 +42,8 @@ const MissionSection = () => {
           }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1472653431158-6364773b2729?q=80&w=2669&auto=format&fit=crop"
-            alt="Open Heavens Crowd"
+            src="images/event-img/img15.jpeg"
+            alt="Open Heaven Crowd"
             fill
             style={{ objectFit: 'cover' }}
             priority
@@ -59,8 +59,8 @@ const MissionSection = () => {
           }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1459749411177-d04bf98544e8?q=80&w=2670&auto=format&fit=crop"
-            alt="Open Heavens Crowd Mobile"
+            src="images/event-img/img15.jpeg"
+            alt="Mama Concert Crowd Mobile"
             fill
             style={{ objectFit: 'cover' }}
           />
