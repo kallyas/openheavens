@@ -94,16 +94,17 @@ const ScriptureQuoteBackground = () => {
     <Box
       sx={{
         py: { xs: 8, md: 12 },
-        backgroundImage: "url('/images/your-background.jpg')", // Replace with your image path
+        backgroundImage: "url('images/event-img/img9.jpeg')", // Replace with your image path
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        opacity: 0.9,
       }}
     >
       <Container maxWidth="md">
         <Box
           sx={{
-            backgroundColor: "rgba(255,255,255,0.9)", // Semi-transparent for readability
+            backgroundImage: "rgba(255,255,255,0.9)", // Semi-transparent for readability
             borderRadius: 2,
             p: { xs: 3, md: 5 },
             boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
