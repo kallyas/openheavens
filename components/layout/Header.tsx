@@ -46,7 +46,7 @@ const HamburgerIcon = () => (
   </div>
 );
 
-const Header = () => {
+constHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -63,7 +63,7 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const announcementText = "Join us for Mama Concert 2026 - A ticket at CAD $100 ! The massive Experience worship on November 28th. Get your FREE ticket now!";
+  const announcementText = "Join us for Mama Concert 2026 - A ticket at CAD $100 ! The massive Experience worship on November 28th. Get your ticket now!";
 
   return (
     <>
