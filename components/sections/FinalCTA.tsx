@@ -18,7 +18,7 @@ const FinalCTA = () => {
 
     downloadCalendar(
       EVENT_INFO.title,
-      `${EVENT_INFO.subtitle} - Join us for an unforgettable night of worship!`,
+      `${EVENT_INFO.subtitle} - Join us for an unforgettable worship!`,
       EVENT_INFO.venue.fullAddress,
       startDate,
       endDate

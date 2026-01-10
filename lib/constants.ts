@@ -1,7 +1,7 @@
 // Event Information
 export const EVENT_INFO = {
   title: "MAMA CONCERT 2026",
-  subtitle: "Join us for an unforgettable night of worship!",
+  subtitle: "Join us for an unforgettable worship!",
   date: "November 28, 2026",
   year: 2026,
   venue: {
