@@ -6,7 +6,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Mama Concert Toronto 2026 - Tickets Available Now at CAD $100",
-  description: "Join us on November 28th at the Metro Convention Centre for an unforgettable night of worship and celebration. Featuring Judith Babirye, Pastor Wilson Bugembe, Levixon, and more. Tickets available now for CAD $100.",
+  description: "Join us on November 21st at the Metro Convention Centre for an unforgettable night of worship and celebration. Featuring Judith Babirye, Pastor Wilson Bugembe, Levixon, and more. Tickets available now for CAD $100.",
   keywords: "Mama Concert, Toronto, Gospel Concert, Worship,Judith Babirye, Pastor Wilson Bugembe, Levixon",
   openGraph: {
     title: "Mama Concert Toronto 2026",
