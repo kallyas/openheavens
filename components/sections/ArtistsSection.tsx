@@ -12,7 +12,7 @@ const ArtistsSection = () => {
       id="featuring"
       sx={{
         py: { xs: 10, md: 16 },
-        backgroundColor: '#fff',
+        backgroundColor: '#000',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -21,46 +21,49 @@ const ArtistsSection = () => {
         {/* Section Header */}
         <Box sx={{ textAlign: 'center', mb: 8 }}>
           <Typography
-            variant="h2"
+            component="h2"
             sx={{
-              fontSize: { xs: '2.5rem', md: '3.5rem', lg: '4rem' },
+              fontSize: { xs: '2.5rem', md: '4rem', lg: '5rem' },
               fontWeight: 900,
-              color: '#000',
+              color: 'white',
               textTransform: 'uppercase',
-              mb: 1,
+              mb: 2,
               letterSpacing: '-0.02em',
+              lineHeight: 1.1,
             }}
           >
-            RAISING VOICES TO WORSHIP THE LORD
+            LEADING VOICES
           </Typography>
           <Typography
-            variant="h3"
+            component="h3"
             sx={{
               fontSize: { xs: '1.25rem', md: '1.5rem' },
-              color: '#6B7280',
+              color: '#9CA3AF',
               fontWeight: 600,
               textTransform: 'uppercase',
               letterSpacing: '0.05em',
             }}
           >
-            ALL WORSHIP &nbsp; PRAISES GO TO JESUS
+            ALL POINTING TO JESUS
           </Typography>
         </Box>
 
         {/* Artists Grid */}
-        <Grid container spacing={3}>
+        <Grid container spacing={4}>
           {FEATURED_ARTISTS.map((artist) => (
-            <Grid size={{ xs: 12, sm: 6, lg: 4 }} key={artist.id}>
+            <Grid size={{ xs: 12, sm: 6, md: 4 }} key={artist.id}>
               <Box
                 sx={{
                   position: 'relative',
                   width: '100%',
-                  paddingTop: '125%',
-                  borderRadius: '12px',
+                  paddingTop: '140%',
+                  borderRadius: '16px',
                   overflow: 'hidden',
                   transition: 'transform 0.3s ease',
+                  boxShadow: '0 8px 24px rgba(0, 0, 0, 0.4)',
                   '&:hover': {
-                    transform: 'scale(1.02)',
+                    transform: 'scale(1.03)',
+                    boxShadow: '0 12px 32px rgba(0, 0, 0, 0.5)',
                   },
                 }}
               >
@@ -72,7 +75,7 @@ const ArtistsSection = () => {
                   }}
                 >
                   <Image
-                    src={artist.image}
+                    src={artist.image ?? '/images/placeholder-artist.jpg'}
                     alt={`${artist.name} performing`}
                     fill
                     style={{
@@ -87,7 +90,7 @@ const ArtistsSection = () => {
                   sx={{
                     position: 'absolute',
                     inset: 0,
-                    background: 'linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%)',
+                    background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.1) 100%)',
                   }}
                 />
 
@@ -98,27 +101,29 @@ const ArtistsSection = () => {
                     bottom: 0,
                     left: 0,
                     right: 0,
-                    p: 3,
+                    p: { xs: 3, md: 4 },
                     zIndex: 1,
                   }}
                 >
                   <Typography
+                    component="span"
                     sx={{
                       color: 'rgba(255,255,255,0.9)',
-                      fontSize: '0.75rem',
+                      fontSize: { xs: '0.75rem', md: '0.85rem' },
                       fontWeight: 600,
                       textTransform: 'uppercase',
                       letterSpacing: '0.1em',
-                      mb: 0.5,
+                      mb: 1,
+                      display: 'block',
                     }}
                   >
                     Featuring
                   </Typography>
                   <Typography
-                    variant="h3"
+                    component="h2"
                     sx={{
                       color: 'white',
-                      fontSize: { xs: '1.5rem', md: '1.75rem' },
+                      fontSize: { xs: '1.75rem', md: '2rem' },
                       fontWeight: 700,
                       lineHeight: 1.2,
                     }}

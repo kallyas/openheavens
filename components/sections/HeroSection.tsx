@@ -63,21 +63,32 @@ const HeroSection = () => {
       >
         <Box>
           {/* Title */}
-          <Typography
-            variant="h1"
+          <Box
             sx={{
-              fontSize: { xs: '3rem', sm: '5rem', md: '7rem' },
+              fontSize: { xs: '3.5rem', sm: '5.5rem', md: '8rem' },
               fontWeight: 900,
               color: 'white',
               textTransform: 'uppercase',
               letterSpacing: '-0.04em',
-              lineHeight: 0.9,
+              lineHeight: 1.1,
               textShadow: '0 4px 20px rgba(0,0,0,0.6)',
               mb: 4,
             }}
           >
-            MAMA <br /> CONCERT
-          </Typography>
+            {/* First Line: MAMA with 2026 badge */}
+            <Box
+              sx={{
+                position: 'relative',
+                display: 'inline-block',
+                mb: 1,
+              }}
+            >
+              <Box component="span">MAMA</Box>
+            </Box>
+
+            {/* Second Line: CONCERT */}
+            <Box component="div">CONCERT</Box>
+          </Box>
 
           {/* Venue */}
           <MuiLink

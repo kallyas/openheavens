@@ -10,6 +10,7 @@ import VolunteerSection from "@/components/sections/VolunteerSection";
 import SocialSharingSection from "@/components/sections/SocialSharingSection";
 import FAQSection from "@/components/sections/FAQSection";
 import FinalCTA from "@/components/sections/FinalCTA";
+import Banner from "@/components/sections/Banner";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
       <FinalCTA />
       <FAQSection />
       <SocialSharingSection />
-     
+      <Banner />
     </>
   );
 }

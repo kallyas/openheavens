@@ -63,7 +63,7 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const announcementText = "Join us for Mama Concert 2026 - A ticket at CAD $100 ! The massive Experience worship on November 28th. Get your ticket now!";
+  const announcementText = "Join us for Mama Concert 2026 - Tickets at CAD $100! Experience massive worship on November 21st. Get your ticket now!";
 
   return (
     <>
@@ -148,7 +148,7 @@ const Header = () => {
               <Box sx={{ borderLeft: '1px solid #fff', padding: '10px 12px', color: '#fff' }}>
                 <Box sx={{ overflow: 'hidden', whiteSpace: 'nowrap', width: '500px', position: 'relative' }}>
                   <div className="scrolling-text">
-                    Join us for Mama Concert 2026 - A ticket at CAD $100 ! The massive Experience worship on November 28th. Get your FREE ticket now!
+                    Join us for Mama Concert 2026 - Tickets at CAD $100! Experience massive worship on November 21st. Get your ticket now!
                   </div>
                 </Box>
               </Box>
@@ -179,74 +179,362 @@ const Header = () => {
         onClose={toggleMobileMenu}
         sx={{
           '& .MuiDrawer-paper': {
-            width: '100%',
-            backgroundColor: '#111827',
+            width: { xs: '85%', sm: '400px' },
+            maxWidth: '400px',
+            backgroundColor: '#fff',
           },
         }}
       >
-        <Box sx={{ p: 2 }}>
+        <Box
+          sx={{
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            position: 'relative',
+          }}
+        >
           {/* Drawer Header */}
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 4 }}>
-            <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }} onClick={toggleMobileMenu}>
-              <Typography
-                sx={{
-                  color: 'white',
-                  fontSize: '1.25rem',
-                  fontWeight: 900,
-                  textTransform: 'uppercase',
-                  letterSpacing: '-0.02em',
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              p: 3,
+              borderBottom: '1px solid rgba(0, 0, 0, 0.08)',
+            }}
+          >
+            {/* Logo Text */}
+            <Link
+              href="/"
+              style={{ textDecoration: 'none', display: 'block' }}
+              onClick={toggleMobileMenu}
+            >
+              <Box>
+                <Typography
+                  component="div"
+                  sx={{
+                    fontSize: '1.5rem',
+                    fontWeight: 900,
+                    textTransform: 'uppercase',
+                    letterSpacing: '-0.02em',
+                    lineHeight: 1.1,
+                    background: 'linear-gradient(135deg, #1e3a8a 0%, #60a5fa 50%, #1e40af 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  MAMA
+                </Typography>
+                <Typography
+                  component="div"
+                  sx={{
+                    fontSize: '1.5rem',
+                    fontWeight: 900,
+                    textTransform: 'uppercase',
+                    letterSpacing: '-0.02em',
+                    lineHeight: 1.1,
+                    background: 'linear-gradient(90deg, #1e40af 0%, #6b21a8 33%, #3b82f6 66%, #1e3a8a 100%)',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                  }}
+                >
+                  CONCERT
+                </Typography>
+              </Box>
+            </Link>
+
+            {/* Close Button with Hamburger Animation */}
+            <Box
+              onClick={toggleMobileMenu}
+              sx={{
+                cursor: 'pointer',
+                height: '48px',
+                width: '48px',
+                position: 'relative',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                '&:hover': {
+                  opacity: 0.7,
+                },
+              }}
+            >
+              <div
+                className="hamburger-react"
+                aria-label="Hide menu"
+                aria-expanded="true"
+                role="button"
+                style={{
+                  cursor: 'pointer',
+                  height: '48px',
+                  position: 'relative',
+                  transition: '0.4s cubic-bezier(0, 0, 0, 1)',
+                  userSelect: 'none',
+                  width: '48px',
+                  outline: 'none',
                 }}
               >
-                MAMA CONCERT 2026
-              </Typography>
-            </Link>
-            <IconButton onClick={toggleMobileMenu} sx={{ color: 'white' }}>
-              <CloseIcon />
-            </IconButton>
+                <div
+                  style={{
+                    background: 'rgb(0, 0, 0)',
+                    height: '2px',
+                    left: '12px',
+                    position: 'absolute',
+                    width: '12px',
+                    top: '16px',
+                    transition: '0.4s cubic-bezier(0, 0, 0, 1)',
+                    transform: 'translate(2.3664px, 3.5989px) rotate(45deg)',
+                  }}
+                ></div>
+                <div
+                  style={{
+                    background: 'rgb(0, 0, 0)',
+                    height: '2px',
+                    left: '50%',
+                    position: 'absolute',
+                    width: '12px',
+                    top: '16px',
+                    transition: '0.4s cubic-bezier(0, 0, 0, 1)',
+                    transform: 'translate(-2.3664px, 3.5989px) rotate(-45deg)',
+                  }}
+                ></div>
+                <div
+                  style={{
+                    background: 'rgb(0, 0, 0)',
+                    height: '2px',
+                    left: '12px',
+                    position: 'absolute',
+                    width: '12px',
+                    top: '23px',
+                    transition: '0.4s cubic-bezier(0, 0, 0, 1)',
+                    opacity: 0,
+                    transform: 'translate(-6.1625px, 0px)',
+                  }}
+                ></div>
+                <div
+                  style={{
+                    background: 'rgb(0, 0, 0)',
+                    height: '2px',
+                    left: '50%',
+                    position: 'absolute',
+                    width: '12px',
+                    top: '23px',
+                    transition: '0.4s cubic-bezier(0, 0, 0, 1)',
+                    opacity: 0,
+                    transform: 'translate(6.1625px, 0px)',
+                  }}
+                ></div>
+                <div
+                  style={{
+                    background: 'rgb(0, 0, 0)',
+                    height: '2px',
+                    left: '12px',
+                    position: 'absolute',
+                    width: '12px',
+                    top: '30px',
+                    transition: '0.4s cubic-bezier(0, 0, 0, 1)',
+                    transform: 'translate(2.3664px, -3.5989px) rotate(-45deg)',
+                  }}
+                ></div>
+                <div
+                  style={{
+                    background: 'rgb(0, 0, 0)',
+                    height: '2px',
+                    left: '50%',
+                    position: 'absolute',
+                    width: '12px',
+                    top: '30px',
+                    transition: '0.4s cubic-bezier(0, 0, 0, 1)',
+                    transform: 'translate(-2.3664px, -3.5989px) rotate(45deg)',
+                  }}
+                ></div>
+              </div>
+            </Box>
           </Box>
 
           {/* Navigation Links */}
-          <List>
+          <Box
+            component="ul"
+            sx={{
+              listStyle: 'none',
+              p: 0,
+              m: 0,
+              flex: 1,
+              overflowY: 'auto',
+            }}
+          >
             {NAV_LINKS.map((link) => (
-              <ListItem key={link.id} disablePadding>
+              <Box
+                component="li"
+                key={link.id}
+                sx={{
+                  borderBottom: '1px solid rgba(0, 0, 0, 0.05)',
+                }}
+              >
                 {link.external ? (
-                  <ListItemButton
+                  <Box
                     component="a"
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={toggleMobileMenu}
-                    sx={{ py: 2 }}
+                    sx={{
+                      display: 'block',
+                      px: 4,
+                      py: 2.5,
+                      textDecoration: 'none',
+                      color: '#000',
+                      fontSize: '1.1rem',
+                      fontFamily: 'Nexa Bold, sans-serif',
+                      fontWeight: 700,
+                      transition: 'all 0.2s ease',
+                      '&:hover': {
+                        backgroundColor: 'rgba(0, 0, 0, 0.03)',
+                        paddingLeft: '36px',
+                      },
+                    }}
                   >
-                    <ListItemText
-                      primary={link.label}
-                      primaryTypographyProps={{
-                        fontSize: '1.25rem',
-                        fontWeight: 500,
-                        color: 'white',
-                      }}
-                    />
-                  </ListItemButton>
+                    {link.label}
+                  </Box>
                 ) : (
-                  <ListItemButton
-                    component={Link}
+                  <Link
                     href={link.href}
+                    style={{ textDecoration: 'none' }}
                     onClick={toggleMobileMenu}
-                    sx={{ py: 2 }}
                   >
-                    <ListItemText
-                      primary={link.label}
-                      primaryTypographyProps={{
-                        fontSize: '1.25rem',
-                        fontWeight: 500,
-                        color: 'white',
+                    <Box
+                      sx={{
+                        display: 'block',
+                        px: 4,
+                        py: 2.5,
+                        color: '#000',
+                        fontSize: '1.1rem',
+                        fontFamily: 'Nexa Bold, sans-serif',
+                        fontWeight: 700,
+                        transition: 'all 0.2s ease',
+                        '&:hover': {
+                          backgroundColor: 'rgba(0, 0, 0, 0.03)',
+                          paddingLeft: '36px',
+                        },
                       }}
-                    />
-                  </ListItemButton>
+                    >
+                      {link.label}
+                    </Box>
+                  </Link>
                 )}
-              </ListItem>
+              </Box>
             ))}
-          </List>
+          </Box>
+
+          {/* Contact Us Section */}
+          <Box
+            sx={{
+              px: 4,
+              py: 3,
+              borderTop: '1px solid rgba(0, 0, 0, 0.08)',
+              backgroundColor: 'rgba(0, 0, 0, 0.02)',
+            }}
+          >
+            <Box
+              component="li"
+              sx={{
+                listStyle: 'none',
+                mb: 3,
+              }}
+            >
+              <Box
+                component="a"
+                href="mailto:info@mamaconcert.com"
+                sx={{
+                  display: 'block',
+                  textDecoration: 'none',
+                  color: '#000',
+                  fontSize: '1rem',
+                  fontWeight: 600,
+                  transition: 'color 0.2s ease',
+                  '&:hover': {
+                    color: '#666',
+                  },
+                }}
+              >
+                Contact Us
+              </Box>
+            </Box>
+
+            {/* Social Media Icons */}
+            <Box
+              sx={{
+                display: 'flex',
+                gap: 2,
+                mb: 3,
+              }}
+            >
+              <IconButton
+                component="a"
+                href="https://instagram.com/victoryintchurchcanada"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                sx={{
+                  color: '#000',
+                  '&:hover': {
+                    backgroundColor: 'rgba(0, 0, 0, 0.08)',
+                  },
+                }}
+              >
+                <svg
+                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium"
+                  focusable="false"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                >
+                  <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+                </svg>
+              </IconButton>
+              <IconButton
+                component="a"
+                href="https://youtube.com/mamaconcert"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                sx={{
+                  color: '#000',
+                  '&:hover': {
+                    backgroundColor: 'rgba(0, 0, 0, 0.08)',
+                  },
+                }}
+              >
+                <svg
+                  className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium"
+                  focusable="false"
+                  aria-hidden="true"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                >
+                  <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z" />
+                </svg>
+              </IconButton>
+            </Box>
+
+            {/* Copyright */}
+            <Typography
+              variant="body2"
+              sx={{
+                color: '#666',
+                fontSize: '0.875rem',
+                fontWeight: 400,
+              }}
+            >
+              Copyright © 2026 MAMA CONCERT
+            </Typography>
+          </Box>
         </Box>
       </Drawer>
     </>

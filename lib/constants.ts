@@ -27,25 +27,25 @@ export const FEATURED_ARTISTS = [
   {
     id: 1,
     name: "Pastor Wilson Bugembe",
-    image: "images/event-img/channels4_profile.jpg", // Man singing/concert
+    image: "/images/event-img/channels4_profile.jpg", // Man singing/concert
     bio: "Pastor and gospel artist from Uganda",
   },
   {
     id: 2,
     name: "Pastor Rev Judith Babirye",
-    image: "images/event-img/judith.jpeg", // Singer
+    image: "/images/event-img/judith.jpeg", // Singer
     bio: "Renowned gospel artist and pastor Victory International Church in Canada",
   },
   {
     id: 3,
     name: "Levixone",
-    image: "images/event-img/Lev.jpg", // Man praying/worship
+    image: "/images/event-img/Lev.jpg", // Man praying/worship
     bio: "Gospel artist and songwriter from Uganda",
   },
   {
     id: 4,
     name: "Esther and Ezekiel",
-    image: "images/event-img/Esther-and-Ezekiel.webp", // Man singing
+    image: "/images/event-img/Esther-and-Ezekiel.webp", // Man singing
     bio: "Dynamic gospel duo",
   },
 

@@ -1,176 +1,147 @@
-// // 
+'use client';
 
-// "use client";
+import React, { useState } from 'react';
+import { Box, Container } from '@mui/material';
+import ReactPlayer from 'react-player';
 
-// import React from "react";
-// import { Box, Typography, Container } from "@mui/material";
+const ScriptureQuote = () => {
+  const [isPlaying, setIsPlaying] = useState(false);
 
-// const ScriptureQuote = () => {
-//   return (
-//     <Box
-//       sx={{
-//         py: { xs: 8, md: 12 },
-//         backgroundColor: "#f9fafb",
-//       }}
-//     >
-//       <Container maxWidth="md">
-//         <Box
-//           sx={{
-//             backgroundColor: "white",
-//             borderRadius: 2,
-//             p: { xs: 3, md: 5 },
-//             boxShadow: "0 10px 30px rgba(0,0,0,0.08)",
-//             textAlign: "center",
-//           }}
-//         >
-//           {/* Heading */}
-//           <Typography
-//             sx={{
-//               fontSize: { xs: "1.5rem", md: "2rem" },
-//               fontWeight: 700,
-//               color: "#111827",
-//               mb: 3,
-//             }}
-//           >
-//             God Speaks Through Worship
-//           </Typography>
+  const handlePlay = () => {
+    setIsPlaying(true);
+  };
 
-//           {/* Scripture */}
-//           <Typography
-//             component="p"
-//             sx={{
-//               fontSize: { xs: "1.05rem", md: "1.15rem" },
-//               color: "#1f2937",
-//               lineHeight: 1.9,
-//               textAlign: "left",
-//               mb: 4,
-//             }}
-//           >
-//             Finally, my brethren, be strong in the Lord, and in the power of His
-//             might. Put on the whole armour of God, that ye may be able to stand
-//             against the wiles of the devil. For we wrestle not against flesh and
-//             blood, but against principalities, against powers, against the rulers
-//             of the darkness of this world, against spiritual wickedness in high
-//             places. Wherefore take unto you the whole armour of God, that ye may
-//             be able to withstand in the evil day, and having done all, to stand.
-//             Stand therefore, having your loins girt about with truth, and having
-//             on the breastplate of righteousness; and your feet shod with the
-//             preparation of the gospel of peace; above all, taking the shield of
-//             faith, wherewith ye shall be able to quench all the fiery darts of the
-//             wicked. And take the helmet of salvation, and the sword of the Spirit,
-//             which is the word of God: praying always with all prayer and
-//             supplication in the Spirit, and watching thereunto with all
-//             perseverance and supplication for all saints; and for me, that
-//             utterance may be given unto me, that I may open my mouth boldly, to
-//             make known the mystery of the gospel, for which I am an ambassador in
-//             bonds: that therein I may speak boldly, as I ought to speak.
-//           </Typography>
-
-//           {/* Reference */}
-//           <Typography
-//             sx={{
-//               fontSize: "1rem",
-//               color: "#6b7280",
-//               fontWeight: 600,
-//               textAlign: "right",
-//             }}
-//           >
-//             — Ephesians 6:10–20
-//           </Typography>
-//         </Box>
-//       </Container>
-//     </Box>
-//   );
-// };
-
-// export default ScriptureQuote;
-"use client";
-
-import React from "react";
-import { Box, Typography, Container } from "@mui/material";
-
-const ScriptureQuoteBackground = () => {
   return (
     <Box
+      component="section"
       sx={{
         py: { xs: 8, md: 12 },
-        backgroundImage: "url('images/event-img/img1.jpeg')", // Replace with your image path
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        opacity: 0.2,
+        position: 'relative',
+        backgroundImage: 'url(/images/event-img/img1.jpeg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        '&::before': {
+          content: '""',
+          position: 'absolute',
+          inset: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.7)',
+          zIndex: 0,
+        },
       }}
     >
-      <Container maxWidth="md">
+      <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
+        {/* Video Section */}
         <Box
           sx={{
-            backgroundImage: "rgba(255,255,255,0.9)", // bring it in front of the background image make it more opaque leave it as white
-            borderRadius: 2,
-            p: { xs: 3, md: 5 },
-            boxShadow: "0 10px 30px rgba(255,255,255,0.5)", // white box shadow for contrast with background image
-            textAlign: "center",
-            maxWidth: { xs: "90%", md: "80%" }, // occupy more width
-            margin: "0 auto", // center horizontally
+            background: 'rgb(255, 255, 255)',
+            border: '2px solid black',
+            borderRadius: '4px',
+            padding: '15px',
+            maxWidth: '85%',
+            width: '100%',
+            margin: '70px auto 0px',
+            display: 'flex',
+            justifyContent: 'center',
+            position: 'relative',
+            zIndex: 2,
+            transform: 'rotate(-2deg)',
           }}
         >
-          {/* Heading */}
-          <Typography
+          <Box
             sx={{
-              fontSize: { xs: "1.5rem", md: "2rem" },
-              fontWeight: 700,
-              color: "#ffffff", // White text for contrast
-              mb: 3,
+              width: '100%',
+              aspectRatio: '16/9',
+              position: 'relative',
+              borderRadius: '4px',
+              overflow: 'hidden',
             }}
           >
-            God Speaks Through Worship
-          </Typography>
+            <ReactPlayer
+              src={'https://www.youtube.com/watch?v=L0ZhSMAzYr8'}
+              width={'100%'}
+              height={'100%'}
+              playing={isPlaying}
+              controls={true}
+              light={'/images/event-img/img15.jpeg'}
+              playIcon={
+                <Box
+                  sx={{
+                    background: 'radial-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0) 60%)',
+                    borderRadius: '64px',
+                    width: '64px',
+                    height: '64px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                  }}
+                >
+                  <Box
+                    sx={{
+                      borderStyle: 'solid',
+                      borderWidth: '16px 0px 16px 26px',
+                      borderColor: 'transparent transparent transparent white',
+                      marginLeft: '7px',
+                    }}
+                  />
+                </Box>
+              }
+              onPlay={handlePlay}
+            />
+          </Box>
+        </Box>
 
-          {/* Scripture */}
-          <Typography
-            component="p"
+        {/* Scripture Quote */}
+        <Box
+          sx={{
+            marginTop: '40px',
+            marginBottom: '50px',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            position: 'relative',
+            zIndex: 2,
+          }}
+        >
+          <Box
+            component="span"
             sx={{
-              fontSize: { xs: "1.05rem", md: "1.15rem" },
-              color: "#ffffff", // White text for contrast readability
-              lineHeight: 1.9,
-              textAlign: "left",
-              mb: 4,
+              fontSize: { xs: '1.25rem', md: '1.5rem' },
+              color: 'white',
+              textAlign: 'center',
+              lineHeight: 1.8,
+              maxWidth: '800px',
+              mb: 2,
             }}
           >
-            Finally, my brethren, be strong in the Lord, and in the power of His
-            might. Put on the whole armour of God, that ye may be able to stand
-            against the wiles of the devil. For we wrestle not against flesh and
-            blood, but against principalities, against powers, against the rulers
-            of the darkness of this world, against spiritual wickedness in high
-            places. Wherefore take unto you the whole armour of God, that ye may
-            be able to withstand in the evil day, and having done all, to stand.
-            Stand therefore, having your loins girt about with truth, and having
-            on the breastplate of righteousness; and your feet shod with the
-            preparation of the gospel of peace; above all, taking the shield of
-            faith, wherewith ye shall be able to quench all the fiery darts of the
-            wicked. And take the helmet of salvation, and the sword of the Spirit,
-            which is the word of God: praying always with all prayer and
-            supplication in the Spirit, and watching thereunto with all
-            perseverance and supplication for all saints; and for me, that
-            utterance may be given unto me, that I may open my mouth boldly, to
-            make known the mystery of the gospel, for which I am an ambassador in
-            bonds: that therein I may speak boldly, as I ought to speak.
-          </Typography>
-
-          {/* Reference */}
-          <Typography
+            "
+            <Box
+              component="span"
+              sx={{
+                fontWeight: 700,
+                color: '#60a5fa',
+              }}
+            >
+              The God of glory
+            </Box>
+            {' '}appeared to our father Abraham when he was in Mesopotamia, before he dwelt in Haran."
+          </Box>
+          <Box
+            component="span"
             sx={{
-              fontSize: "1rem",
-              color: "#ffffff", // white text for contrast
+              fontSize: { xs: '1rem', md: '1.1rem' },
+              color: '#9CA3AF',
               fontWeight: 600,
-              textAlign: "right",
+              textAlign: 'center',
             }}
           >
-            — Ephesians 6:10–20
-          </Typography>
+            Acts 7:2
+          </Box>
         </Box>
       </Container>
     </Box>
   );
 };
 
-export default ScriptureQuoteBackground;
+export default ScriptureQuote;
