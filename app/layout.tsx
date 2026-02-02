@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords: "Mama Concert, Toronto, Gospel Concert, Worship,Judith Babirye, Pastor Wilson Bugembe, Levixon",
   openGraph: {
     title: "Mama Concert Toronto 2026",
-    description: "A Ticket at CAD $100 ! November 28th | Metro Convention Centre",
+    description: "A Ticket at CAD $100 ! November 21st | TORONTO PAVILLION ",
     type: "website",
     locale: "en_CA",
   },
