@@ -7,13 +7,13 @@ import Marquee from "@/components/ui/Marquee";
 
 const AnnouncementBanner = () => {
   const announcement =
-    "Join us for Open Heavens Toronto 2025 - A FREE New Year's Eve Gospel Concert • December 31st at The International Centre • Free Admission • Free Transportation • Register Now!";
+    "Join us for Mama Concert 2026 - A ticket at CAD $100 ! The massive Experience worship on November 28th. Get your ticket now!";
 
   const announcements = Array(10).fill(announcement);
 
   return (
     <Box sx={{
-      background: 'linear-gradient(to right, #ca8a04, #eab308)', // accent-600 to accent-500
+      background: 'linear-gradient(to right, #ca8a04, #eab308)', // dark gold gradient
       color: '#111827', // gray-900
       py: 1.5,
     }}>

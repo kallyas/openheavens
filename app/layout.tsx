@@ -5,12 +5,12 @@ import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Open Heavens Toronto 2025 - A FREE New Year's Eve Gospel Concert",
-  description: "Join us on December 31st at The International Centre for an unforgettable night of worship and celebration. Featuring Michael W. Smith, Chevelle Franklyn, Don Moen, Joe Mettle, and more. Free admission and free transportation available.",
-  keywords: "Open Heavens, Toronto, Gospel Concert, New Year's Eve, Worship, Free Event, Michael W. Smith, Chevelle Franklyn, Don Moen, Joe Mettle",
+  title: "Mama Concert Toronto 2026 - Tickets Available Now at CAD $100",
+  description: "Join us on November 21st at the Metro Convention Centre for an unforgettable night of worship and celebration. Featuring Judith Babirye, Pastor Wilson Bugembe, Levixon, and more. Tickets available now for CAD $100.",
+  keywords: "Mama Concert, Toronto, Gospel Concert, Worship,Judith Babirye, Pastor Wilson Bugembe, Levixon",
   openGraph: {
-    title: "Open Heavens Toronto 2025",
-    description: "A FREE New Year's Eve Gospel Concert - December 31st at The International Centre",
+    title: "Mama Concert Toronto 2026",
+    description: "A Ticket at CAD $100 ! November 28th | Metro Convention Centre",
     type: "website",
     locale: "en_CA",
   },

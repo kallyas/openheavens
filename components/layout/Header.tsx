@@ -63,7 +63,7 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const announcementText = "Join us for Open Heavens Toronto 2025 - A FREE New Year's Eve Gospel Concert! Experience an unforgettable night of worship and celebration on December 31st. Get your FREE ticket now!";
+  const announcementText = "Join us for Mama Concert 2026 - A ticket at CAD $100 ! The massive Experience worship on November 28th. Get your ticket now!";
 
   return (
     <>
@@ -93,11 +93,11 @@ const Header = () => {
                   position: 'relative'
                 }}>
                   <img
-                    alt="Ignite Church"
+                    alt="Victory International Church "
                     width="97"
                     height="40"
                     style={{ color: 'transparent', objectFit: 'contain', width: '100%', height: 'auto' }}
-                    src="https://images.unsplash.com/photo-1438232992991-995b7058bbb3?q=80&w=2673&auto=format&fit=crop" // Temporary placeholder or use text
+                    src="/images/hero/mama-concert.png" // Temporary placeholder or use text
                     // In a real scenario, we'd use the actual logo asset. For now, let's use a text fallback if image fails or just text.
                     // But to match pixel perfect, I will try to simulate the layout.
                     onError={(e) => {
@@ -118,7 +118,7 @@ const Header = () => {
                       fontSize: '1.2rem'
                     }}
                   >
-                    OPEN<br />HEAVENS
+                    MAMA<br />CONCERT
                   </Typography>
                 </Box>
               </Link>
@@ -148,7 +148,7 @@ const Header = () => {
               <Box sx={{ borderLeft: '1px solid #fff', padding: '10px 12px', color: '#fff' }}>
                 <Box sx={{ overflow: 'hidden', whiteSpace: 'nowrap', width: '500px', position: 'relative' }}>
                   <div className="scrolling-text">
-                    Join us for Open Heavens Toronto 2025 - A FREE New Year's Eve Gospel Concert! Experience an unforgettable night of worship and celebration on December 31st. Get your FREE ticket now! • Join us for Open Heavens Toronto 2025 - A FREE New Year's Eve Gospel Concert! Experience an unforgettable night of worship and celebration on December 31st. Get your FREE ticket now!
+                    Join us for Mama Concert 2026 - A ticket at CAD $100 ! The massive Experience worship on November 28th. Get your FREE ticket now!
                   </div>
                 </Box>
               </Box>
@@ -197,7 +197,7 @@ const Header = () => {
                   letterSpacing: '-0.02em',
                 }}
               >
-                OPEN HEAVENS
+                MAMA CONCERT 2026
               </Typography>
             </Link>
             <IconButton onClick={toggleMobileMenu} sx={{ color: 'white' }}>

@@ -8,6 +8,8 @@ import CommunitySection from "@/components/sections/CommunitySection";
 import TransportationSection from "@/components/sections/TransportationSection";
 import VolunteerSection from "@/components/sections/VolunteerSection";
 import SocialSharingSection from "@/components/sections/SocialSharingSection";
+import FAQSection from "@/components/sections/FAQSection";
+import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
   return (
@@ -19,9 +21,12 @@ export default function Home() {
       <FeaturesMarquee />
       <GallerySection />
       <CommunitySection />
-      <TransportationSection />
       <VolunteerSection />
+      <TransportationSection />
+      <FinalCTA />
+      <FAQSection />
       <SocialSharingSection />
+     
     </>
   );
 }

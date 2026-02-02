@@ -1,21 +1,14 @@
-'use client';
 
-import React, { useState } from 'react';
-import Image from 'next/image';
+import React from 'react';
 import { Box, Typography, Container, Link as MuiLink } from '@mui/material';
 import { EVENT_INFO } from '@/lib/constants';
 
 const HeroSection = () => {
-  const [playerReady, setPlayerReady] = useState(false);
-
   return (
     <Box
       sx={{
         position: 'relative',
         minHeight: '100vh',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
         overflow: 'hidden',
         backgroundColor: '#000',
       }}
@@ -28,30 +21,28 @@ const HeroSection = () => {
           zIndex: 0,
         }}
       >
-        <iframe
-          width="100%"
-          height="100%"
-          src="https://www.youtube.com/embed/L0ZhSMAzYr8?autoplay=1&mute=1&controls=0&loop=1&playlist=L0ZhSMAzYr8&playsinline=1&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&start=27"
-          title="Open Heavens Promo"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        <video
+          src="/images/event-img/video.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
           style={{
             position: 'absolute',
-            top: '50%',
-            left: '50%',
-            width: '100vw',
-            height: '100vh',
-            transform: 'translate(-50%, -50%)',
-            pointerEvents: 'none',
+            inset: 0,
+            width: '100%',
+            height: '100%',
             objectFit: 'cover',
           }}
         />
+
         {/* Dark Overlay */}
         <Box
           sx={{
             position: 'absolute',
             inset: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.3)',
+            backgroundColor: 'rgba(0, 0, 0, 0.35)',
           }}
         />
       </Box>
@@ -59,68 +50,55 @@ const HeroSection = () => {
       {/* Main Content */}
       <Container
         maxWidth="lg"
-        disableGutters
         sx={{
           position: 'relative',
-          zIndex: 10,
-          textAlign: 'center',
+          zIndex: 2,
+          minHeight: '100vh',
           display: 'flex',
-          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          minHeight: '100vh',
+          textAlign: 'center',
           px: 2,
         }}
       >
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            {/* Logo Placeholder - matches rawhtml structure */}
-            <Box sx={{ mb: 4 }}>
-                 {/* Using text as placeholder for the logo image */}
-                <Typography
-                    variant="h1"
-                    sx={{
-                    fontSize: { xs: '3rem', sm: '5rem', md: '7rem' },
-                    fontWeight: 900,
-                    color: 'white',
-                    textTransform: 'uppercase',
-                    letterSpacing: '-0.04em',
-                    lineHeight: 0.9,
-                    textShadow: '0 4px 20px rgba(0,0,0,0.5)',
-                    textAlign: 'center'
-                    }}
-                >
-                    OPEN<br/>HEAVENS
-                </Typography>
-            </Box>
+        <Box>
+          {/* Title */}
+          <Typography
+            variant="h1"
+            sx={{
+              fontSize: { xs: '3rem', sm: '5rem', md: '7rem' },
+              fontWeight: 900,
+              color: 'white',
+              textTransform: 'uppercase',
+              letterSpacing: '-0.04em',
+              lineHeight: 0.9,
+              textShadow: '0 4px 20px rgba(0,0,0,0.6)',
+              mb: 4,
+            }}
+          >
+            MAMA <br /> CONCERT
+          </Typography>
 
-            {/* Address Link */}
-            <Box>
-                <MuiLink
-                href={EVENT_INFO.venue.googleMapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                underline="none"
-                sx={{
-                    color: 'white',
-                    textAlign: 'center',
-                    display: 'block',
-                    '&:hover': { opacity: 0.8 }
-                }}
-                >
-                <Typography
-                    variant="body1"
-                    sx={{
-                    fontWeight: 700,
-                    fontSize: { xs: '1rem', md: '1.25rem' },
-                    lineHeight: 1.4,
-                    textShadow: '0 2px 4px rgba(0,0,0,0.5)'
-                    }}
-                >
-                    THE INTERNATIONAL CENTRE<br/>
-                    6900 AIRPORT RD, MISSISSAUGA, ON L4V 1E8
-                </Typography>
-                </MuiLink>
-            </Box>
+          {/* Venue */}
+          <MuiLink
+            href={EVENT_INFO.venue.googleMapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            underline="none"
+            sx={{ color: 'white', '&:hover': { opacity: 0.85 } }}
+          >
+            <Typography
+              sx={{
+                fontWeight: 700,
+                fontSize: { xs: '1rem', md: '1.25rem' },
+                lineHeight: 1.4,
+                textShadow: '0 2px 4px rgba(0,0,0,0.6)',
+              }}
+            >
+              METRO CONVENTION CENTRE <br />
+              255 FRONT ST W, TORONTO, ON M5V 2W6
+            </Typography>
+          </MuiLink>
         </Box>
       </Container>
     </Box>

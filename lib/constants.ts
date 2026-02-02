@@ -1,24 +1,24 @@
 // Event Information
 export const EVENT_INFO = {
-  title: "Open Heavens Toronto 2025",
-  subtitle: "A FREE New Year's Eve Gospel Concert",
-  date: "WED, DEC 31ST",
-  year: 2025,
+  title: "MAMA CONCERT 2026",
+  subtitle: "Join us for an unforgettable worship!",
+  date: "November 21, 2026",
+  year: 2026,
   venue: {
-    name: "THE INTERNATIONAL CENTRE",
-    address: "6900 AIRPORT RD, MISSISSAUGA",
-    fullAddress: "6900 Airport Rd, Mississauga, ON L4V 1E8",
-    googleMapsUrl: "https://maps.google.com/?q=6900+Airport+Rd,+Mississauga,+ON+L4V+1E8",
+    name: "Metro Convention Centre",
+    address: "255 Front St W, Toronto, ON M5V 2W6",
+    fullAddress: "255 Front St W, Toronto, ON M5V 2W6",
+    googleMapsUrl: "https://maps.google.com/?q=255+Front+St+W,+Toronto,+ON+M5V+2W6",
   },
   timing: {
     doorsOpen: "6:00 PM",
     eventStart: "7:00 PM",
   },
   contact: {
-    phone: "(905) 624-5673",
-    email: "info@openheavenstoronto.com",
+    phone: "(437) 232-4417 / (437)388-6384",
+    email: "info@mamaconcert.com",
   },
-  ticketUrl: "https://hopevents.typeform.com/OH2025",
+  ticketUrl: "https://form.typeform.com/to/Ij072pJa?typeform-source=helicon-dinosaur-2nx4.squarespace.com",
   livestreamUrl: "https://youtube.com/hopraise/live",
 };
 
@@ -26,55 +26,49 @@ export const EVENT_INFO = {
 export const FEATURED_ARTISTS = [
   {
     id: 1,
-    name: "Michael W. Smith",
-    image: "https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=2670&auto=format&fit=crop", // Man singing/concert
-    bio: "Grammy Award-winning Contemporary Christian artist",
+    name: "Pastor Wilson Bugembe",
+    image: "images/event-img/channels4_profile.jpg", // Man singing/concert
+    bio: "Pastor and gospel artist from Uganda",
   },
   {
     id: 2,
-    name: "Chevelle Franklyn",
-    image: "https://images.unsplash.com/photo-1516280440614-6697288d5d38?q=80&w=2670&auto=format&fit=crop", // Singer
-    bio: "Reggae gospel sensation from Jamaica",
+    name: "Pastor Rev Judith Babirye",
+    image: "images/event-img/judith.jpeg", // Singer
+    bio: "Renowned gospel artist and pastor Victory International Church in Canada",
   },
   {
     id: 3,
-    name: "Don Moen",
-    image: "https://images.unsplash.com/photo-1525994886773-080587e124c9?q=80&w=2672&auto=format&fit=crop", // Man praying/worship
-    bio: "Legendary worship leader and songwriter",
+    name: "Levixone",
+    image: "images/event-img/Lev.jpg", // Man praying/worship
+    bio: "Gospel artist and songwriter from Uganda",
   },
   {
     id: 4,
-    name: "Joe Mettle",
-    image: "https://images.unsplash.com/photo-1523906630133-f6934a1ab2b9?q=80&w=2576&auto=format&fit=crop", // Man singing
-    bio: "Gospel music minister from Ghana",
+    name: "Esther and Ezekiel",
+    image: "images/event-img/Esther-and-Ezekiel.webp", // Man singing
+    bio: "Dynamic gospel duo",
   },
-  {
-    id: 5,
-    name: "Pastor Wale Akinsiku",
-    shortName: "PWA",
-    image: "https://images.unsplash.com/photo-1471478331149-c72f17e33c73?q=80&w=2669&auto=format&fit=crop", // Speaker/leader
-    bio: "Dynamic worship leader",
-  },
-  {
-    id: 6,
-    name: "Pastor Tope Akinsiku",
-    shortName: "PTA",
-    image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?q=80&w=2669&auto=format&fit=crop", // Woman speaker
-    bio: "Passionate worship minister",
-  },
+
+  // {
+  //   id: 6,
+  //   name: "Pastor Tope Akinsiku",
+  //   shortName: "PTA",
+  //   image: "./images/event-img/artist6.jpg", // Woman speaker
+  //   bio: "Passionate worship minister",
+  // },
 ];
 
 // Event Features
 export const EVENT_FEATURES = [
-  { id: 1, text: "Free Admission", icon: "ticket" },
-  { id: 2, text: "Free Shuttle Routes", icon: "bus" },
+  { id: 1, text: "Get Your Ticket Now", icon: "ticket" },
+  { id: 2, text: "Shared Cars", icon: "bus" },
   { id: 3, text: "Kids & Family Seating", icon: "users" },
   { id: 4, text: "Livestream Access", icon: "video" },
   { id: 5, text: "Doors Open 6 PM", icon: "clock" },
 ];
 
 // Shuttle Routes
-export const SHUTTLE_ROUTES = [
+export const JOINED_MOVEMENT = [
   {
     id: 1,
     name: "Waterloo",
@@ -82,7 +76,7 @@ export const SHUTTLE_ROUTES = [
       "Conestoga Mall - 550 King St N, Waterloo",
       "Pickup Time: 3:30 PM",
     ],
-    details: "Free shuttle service from Waterloo region",
+    details: "Shared Car service from Waterloo region",
   },
   {
     id: 2,
@@ -91,7 +85,7 @@ export const SHUTTLE_ROUTES = [
       "Limeridge Mall - 999 Upper Wentworth St, Hamilton",
       "Pickup Time: 4:00 PM",
     ],
-    details: "Free shuttle service from Hamilton",
+    details: "Shared Car service from Hamilton",
   },
   {
     id: 3,
@@ -100,7 +94,7 @@ export const SHUTTLE_ROUTES = [
       "Scarborough Town Centre - 300 Borough Dr",
       "Pickup Time: 4:30 PM",
     ],
-    details: "Free shuttle service from Scarborough",
+    details: "Shared Car service from Scarborough",
   },
   {
     id: 4,
@@ -110,7 +104,7 @@ export const SHUTTLE_ROUTES = [
       "Sherway Gardens - 25 The West Mall",
       "Pickup Time: 4:30 PM",
     ],
-    details: "Free shuttle service from North York and Etobicoke",
+    details: "Shared Car service from North York and Etobicoke",
   },
   {
     id: 5,
@@ -119,7 +113,7 @@ export const SHUTTLE_ROUTES = [
       "Bramalea City Centre - 25 Peel Centre Dr",
       "Pickup Time: 4:45 PM",
     ],
-    details: "Free shuttle service from Brampton",
+    details: "Shared Car service from Brampton",
   },
   {
     id: 6,
@@ -128,7 +122,7 @@ export const SHUTTLE_ROUTES = [
       "Union Station - 65 Front St W",
       "Pickup Time: 5:00 PM",
     ],
-    details: "Free shuttle service from Downtown Toronto",
+    details: "Shared Car service from Downtown Toronto",
   },
   {
     id: 7,
@@ -137,7 +131,7 @@ export const SHUTTLE_ROUTES = [
       "Square One Shopping Centre - 100 City Centre Dr",
       "Pickup Time: 5:15 PM",
     ],
-    details: "Free shuttle service from Mississauga",
+    details: "Shared Car  service from Mississauga",
   },
   {
     id: 8,
@@ -147,7 +141,7 @@ export const SHUTTLE_ROUTES = [
       "Fairview Mall - 1800 Sheppard Ave E",
       "Pickup Time: 3:45 PM / 4:45 PM",
     ],
-    details: "Free shuttle service from Whitby and Don Mills",
+    details: "Shared Car service from Whitby and Don Mills",
   },
 ];
 
@@ -155,45 +149,45 @@ export const SHUTTLE_ROUTES = [
 export const FAQ_DATA = [
   {
     id: 1,
-    question: "Is the event really free?",
+    question: "what Is the fee for the Concert?",
     answer:
-      "Yes! Open Heavens Toronto 2025 is completely free to attend. We believe in making worship accessible to everyone. Simply register for your free ticket to secure your spot.",
+      "its just CAD $100 per ticket. However, we encourage attendees to register in advance as tickets are limited and available on a first-come, first-served basis.",
   },
   {
     id: 2,
     question: "How do I get free transportation?",
     answer:
-      "We offer free shuttle services from multiple locations across the GTA including Waterloo, Hamilton, Scarborough, North York, Brampton, Downtown Toronto, Mississauga, and more. Check our shuttle schedule for pickup locations and times. Shuttles must be reserved in advance.",
+     "There is no free transportation but there will be shared cars from various locations. Please refer to the 'Shared Transportation' section on our website for details on pickup locations and times.",
   },
   {
     id: 3,
     question: "Can I bring my children?",
     answer:
-      "Absolutely! Open Heavens is a family-friendly event. We have dedicated Kids & Family Seating areas. Children of all ages are welcome to join us in worship.",
+      "Absolutely! Mama Concert is a family-friendly event. We have dedicated Kids & Family Seating areas. Children of all ages are welcome to join us in worship.",
   },
   {
     id: 4,
     question: "Is parking available?",
     answer:
-      "Yes, parking is available at The International Centre. However, spaces are limited and we highly recommend using our free shuttle service or carpooling with friends.",
-  },
+      "Yes, parking is available at Metro Toronto Convention Centre. However, spaces are limited"
+    },
   {
     id: 5,
     question: "What time should I arrive?",
     answer:
-      "Doors open at 6:00 PM and the event starts at 7:00 PM. We recommend arriving early to get good seats and soak in the pre-service atmosphere.",
+      "Doors open at 6:00 PM and the Concert starts at 7:00 PM. We recommend arriving early to get good seats and soak in the pre-service atmosphere.",
   },
   {
     id: 6,
     question: "Is the event accessible for people with disabilities?",
     answer:
-      "Yes, The International Centre is fully accessible. We have wheelchair-accessible entrances, seating, and facilities. If you have specific accessibility needs, please contact us in advance.",
+      "Yes, The Metro Toronto Convention Centre is fully accessible. We have wheelchair-accessible entrances, seating, and facilities. If you have specific accessibility needs, please contact us in advance.",
   },
   {
     id: 7,
     question: "Can I watch online if I can't attend in person?",
     answer:
-      "Yes! The event will be livestreamed on our YouTube channel. Visit youtube.com/hopraise/live on December 31st to join us virtually from anywhere in the world.",
+      "Yes! The event will be livestreamed on our YouTube channel. Visit youtube.com/mamaconcert/live on 28th November to join us virtually from anywhere in the world.",
   },
   {
     id: 8,
@@ -207,27 +201,22 @@ export const FAQ_DATA = [
     answer:
       "Yes! We'd love to have you serve with us. Visit our volunteer page to sign up and learn about available opportunities.",
   },
-  {
-    id: 10,
-    question: "What COVID-19 safety measures are in place?",
-    answer:
-      "We follow all current public health guidelines. Please check back closer to the event date for the most up-to-date health and safety protocols.",
-  },
 ];
 
 // Social Media Links
 export const SOCIAL_LINKS = {
-  youtube: "https://youtube.com/hopraise",
-  facebook: "https://facebook.com/ignitechurchcanada",
-  instagram: "https://instagram.com/ignitechurchcanada",
+  youtube: "https://youtube.com/mamaconcert",
+  twitter: "https://twitter.com/victoryintchurch",
+  facebook: "https://facebook.com/victoryintchurchcanada",
+  instagram: "https://instagram.com/victoryintchurchcanada",
 };
 
 // Navigation Links
 export const NAV_LINKS = [
   { id: 1, label: "Home", href: "/" },
-  { id: 2, label: "Artists", href: "#artists" },
+  { id: 2, label: "Artists", href: "/ArtistsSection" },
   { id: 3, label: "Schedule", href: "#schedule" },
-  { id: 4, label: "Transportation", href: "#transportation" },
+  { id: 4, label: "Transportation", href: "/TransportationSection" },
   { id: 5, label: "Get Tickets", href: EVENT_INFO.ticketUrl, external: true },
   { id: 6, label: "Volunteer", href: "#volunteer" },
 ];
@@ -245,14 +234,14 @@ export const FOOTER_SECTIONS = [
     id: 2,
     title: "More Info",
     links: [
-      { id: 1, label: "FAQs", href: "#faq" },
-      { id: 2, label: "Share Event", href: "/share-OH" },
+      { id: 1, label: "FAQs", href: "/" },
+      { id: 2, label: "Share Event", href: "#share" },
       { id: 3, label: "Contact Us", href: "#contact" },
     ],
   },
   {
     id: 3,
-    title: "Open Heavens Resources",
+    title: "Mama Concert Resources",
     links: [
       { id: 1, label: "Get Involved", href: "#volunteer" },
       { id: 2, label: "Transportation", href: "#transportation" },

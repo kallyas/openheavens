@@ -6,16 +6,16 @@ import { Box, Typography } from '@mui/material';
 
 const GallerySection = () => {
   const showcaseImages = [
-    { id: 1, src: 'https://images.unsplash.com/photo-1507646170669-7dbca7e06ff3?q=80&w=2670&auto=format&fit=crop', alt: 'Worship concert crowd' },
-    { id: 2, src: 'https://images.unsplash.com/photo-1533174072545-e8d4aa97edf9?q=80&w=2670&auto=format&fit=crop', alt: 'Concert lighting' },
-    { id: 3, src: 'https://images.unsplash.com/photo-1459749411177-d04bf98544e8?q=80&w=2670&auto=format&fit=crop', alt: 'Musician playing' },
-    { id: 4, src: 'https://images.unsplash.com/photo-1514525253440-b393452e8d03?q=80&w=2670&auto=format&fit=crop', alt: 'Concert atmosphere' },
-    { id: 5, src: 'https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=2674&auto=format&fit=crop', alt: 'Audience enjoying music' },
-    { id: 6, src: 'https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?q=80&w=2670&auto=format&fit=crop', alt: 'Stage lights' },
-    { id: 7, src: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=2670&auto=format&fit=crop', alt: 'Microphone' },
-    { id: 8, src: 'https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=2670&auto=format&fit=crop', alt: 'Concert hands raised' },
-    { id: 9, src: 'https://images.unsplash.com/photo-1493225255756-d9584f8606e9?q=80&w=2670&auto=format&fit=crop', alt: 'Singer performing' },
-    { id: 10, src: 'https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=2670&auto=format&fit=crop', alt: 'Concert finale' },
+    { id: 1, src: 'images/event-img/img1.jpeg', alt: 'Worship concert crowd' },
+    { id: 2, src: 'images/event-img/img2.jpeg', alt: 'Concert lighting' },
+    { id: 3, src: 'images/event-img/img3.jpeg', alt: 'Musician playing' },
+    { id: 4, src: 'images/event-img/img4.jpeg', alt: 'Concert atmosphere' },
+    { id: 5, src: 'images/event-img/img5.jpeg', alt: 'Audience enjoying music' },
+    { id: 6, src: 'images/event-img/img6.jpeg', alt: 'Stage lights' },
+    { id: 7, src: 'images/event-img/img7.jpeg', alt: 'Microphone' },
+    { id: 8, src: 'images/event-img/img8.jpeg', alt: 'Concert hands raised' },
+    { id: 9, src: 'images/event-img/img9.jpeg', alt: 'Singer performing' },
+    { id: 10, src: 'images/event-img/img10.jpeg', alt: 'Concert finale' },
   ];
 
   return (
@@ -36,7 +36,7 @@ const GallerySection = () => {
           top: 0,
           left: 0,
           width: '100%',
-          height: '50%',
+          height: '70%',
           background: 'linear-gradient(180deg, #7c3aed 0%, transparent 100%)',
           opacity: 0.1,
         }}
@@ -97,12 +97,12 @@ const GallerySection = () => {
           sx={{
             fontSize: { xs: '1.25rem', md: '1.75rem', lg: '2.25rem' },
             fontWeight: 700,
-            color: '#a78bfa',
+            color: '#b8860b',// dark golden
             textTransform: 'uppercase',
             letterSpacing: '0.1em',
           }}
         >
-          OPEN HEAVENS 2025
+          MAMA CONCERT 2026
         </Typography>
       </Box>
 

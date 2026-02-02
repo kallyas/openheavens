@@ -51,7 +51,7 @@ const FAQSection = () => {
               Frequently Asked Questions
             </Typography>
             <Typography variant="body1" sx={{ fontSize: '1.25rem', color: '#9ca3af' }}> {/* gray-400 */}
-              Everything you need to know about Open Heavens Toronto 2025
+              What you need to know about Mama Concert Toronto 2026
             </Typography>
           </Box>
         </motion.div>

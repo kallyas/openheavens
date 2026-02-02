@@ -13,12 +13,12 @@ const FinalCTA = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   const handleAddToCalendar = () => {
-    const startDate = new Date("2025-12-31T19:00:00");
-    const endDate = new Date("2026-01-01T01:00:00");
+    const startDate = new Date("2026-11-28T19:00:00");
+    const endDate = new Date("2026-11-28T23:59:59");
 
     downloadCalendar(
       EVENT_INFO.title,
-      `${EVENT_INFO.subtitle} - Join us for an unforgettable night of worship!`,
+      `${EVENT_INFO.subtitle} - Join us for an unforgettable worship!`,
       EVENT_INFO.venue.fullAddress,
       startDate,
       endDate
@@ -62,7 +62,7 @@ const FinalCTA = () => {
               See You At
             </Typography>
             <Typography variant="h1" sx={{ fontSize: { xs: '2.25rem', md: '3rem', lg: '3.75rem' }, fontWeight: 900, color: 'white', mb: 3, textTransform: 'uppercase', lineHeight: 1.1 }}>
-              Open Heavens 2025
+              Mama Concert 2026
             </Typography>
 
             {/* Venue */}
@@ -118,7 +118,7 @@ const FinalCTA = () => {
                 // Wait, Button.tsx is a custom component, I should check it too. But for now I will pass className if it supports it, or better, if I refactored Button I should check.
                 // Actually I haven't checked Button.tsx. It's likely using Tailwind.
                 >
-                  Get Your Free Ticket
+                  Get Your Ticket Now
                 </Button>
                 <Button
                   onClick={handleAddToCalendar}
@@ -138,8 +138,8 @@ const FinalCTA = () => {
               animate={isInView ? { opacity: 1 } : {}}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Typography sx={{ mt: 6, color: '#d1d5db', fontSize: '1.125rem' }}>
-                Free Admission • Free Transportation • Family-Friendly
+              <Typography sx={{ mt: 6, color: '#b8860b', fontSize: '1.125rem' }}>
+                CAD $100 &nbsp; • &nbsp; Family-Friendly &nbsp; • &nbsp; Free Parking Available
               </Typography>
             </motion.div>
           </Box>

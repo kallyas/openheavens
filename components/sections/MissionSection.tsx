@@ -11,7 +11,7 @@ const MissionSection = () => {
   };
 
   const handleInviteFriend = () => {
-    const message = `Join me at Open Heavens Toronto 2025! A FREE New Year's Eve Gospel Concert on December 31st. Register for your free ticket at ${EVENT_INFO.ticketUrl}`;
+    const message = `Join Us at MAMA CONCERT 2026 At A  FREE of CAD $100 on November 28th. Register for your free ticket at ${EVENT_INFO.ticketUrl}`;
     const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank', 'width=600,height=400');
   };
@@ -42,8 +42,8 @@ const MissionSection = () => {
           }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1472653431158-6364773b2729?q=80&w=2669&auto=format&fit=crop"
-            alt="Open Heavens Crowd"
+            src="images/event-img/img15.jpeg"
+            alt="Mama Concert Crowd Desktop"
             fill
             style={{ objectFit: 'cover' }}
             priority
@@ -59,8 +59,8 @@ const MissionSection = () => {
           }}
         >
           <Image
-            src="https://images.unsplash.com/photo-1459749411177-d04bf98544e8?q=80&w=2670&auto=format&fit=crop"
-            alt="Open Heavens Crowd Mobile"
+            src="images/event-img/img15.jpeg"
+            alt="Mama Concert Crowd Mobile"
             fill
             style={{ objectFit: 'cover' }}
           />
@@ -100,11 +100,11 @@ const MissionSection = () => {
               willChange: 'transform',
             }}
           >
-            ONE HEART,
+            ONE GOD,
             <br />
-            ONE VOICE,
+            ONE ALTAR,
             <br />
-            ONE GOD
+            ONE PRAISE
           </Typography>
 
           {/* Description */}
@@ -121,8 +121,7 @@ const MissionSection = () => {
               textShadow: '0 2px 8px rgba(0,0,0,0.66), 0 0.5px 1px rgba(0,0,0,0.25)',
             }}
           >
-            Open Heavens is the expression of a city on fire for Jesus. One heart, one sound as
-            we cross into 2026.
+            MAMA CONCERT is a gospel concert experience bringing together believers from all walks of life to worship, connect, and be transformed. Join us for an unforgettable night of powerful music, inspiring messages, and a celebration of faith that unites us all.
           </Typography>
 
           {/* CTA Buttons */}
@@ -150,7 +149,7 @@ const MissionSection = () => {
                 },
               }}
             >
-              GET YOUR FREE TICKET
+              GET YOUR TICKET NOW
             </Button>
             <Button
               variant="outlined"

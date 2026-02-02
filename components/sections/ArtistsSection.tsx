@@ -31,7 +31,7 @@ const ArtistsSection = () => {
               letterSpacing: '-0.02em',
             }}
           >
-            LEADING VOICES
+            RAISING VOICES TO WORSHIP THE LORD
           </Typography>
           <Typography
             variant="h3"
@@ -43,7 +43,7 @@ const ArtistsSection = () => {
               letterSpacing: '0.05em',
             }}
           >
-            ALL POINTING TO JESUS
+            ALL WORSHIP &nbsp; PRAISES GO TO JESUS
           </Typography>
         </Box>
 
@@ -123,7 +123,7 @@ const ArtistsSection = () => {
                       lineHeight: 1.2,
                     }}
                   >
-                    {artist.shortName || artist.name}
+                    {artist.name}
                   </Typography>
                 </Box>
               </Box>

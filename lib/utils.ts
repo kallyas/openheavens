@@ -25,7 +25,7 @@ export function generateCalendarFile(
   const icsContent = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Open Heavens Toronto//NONSGML v1.0//EN",
+    "PRODID:-//mama Concert 2026//NONSGML v1.0//EN",
     "BEGIN:VEVENT",
     `DTSTART:${formatCalendarDate(startDate)}`,
     `DTEND:${formatCalendarDate(endDate)}`,
@@ -59,7 +59,7 @@ export function downloadCalendar(
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "open-heavens-2025.ics";
+  link.download = "mama-concert-2026.ics";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
