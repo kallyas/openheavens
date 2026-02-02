@@ -106,8 +106,8 @@ const HeroSection = () => {
                 textShadow: '0 2px 4px rgba(0,0,0,0.6)',
               }}
             >
-              METRO CONVENTION CENTRE <br />
-              255 FRONT ST W, TORONTO, ON M5V 2W6
+             TORONTO PAVILION <br />
+             190 Railside Rd, NORTH YORK, ON M3A 1A3
             </Typography>
           </MuiLink>
         </Box>
