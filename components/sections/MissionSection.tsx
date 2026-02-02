@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Box, Typography, Container, Button, Stack } from '@mui/material';
+import { Box, Typography, Container, Button } from '@mui/material';
 import { EVENT_INFO } from '@/lib/constants';
 
 const MissionSection = () => {
@@ -11,7 +11,7 @@ const MissionSection = () => {
   };
 
   const handleInviteFriend = () => {
-    const message = `Join Us at MAMA CONCERT 2026 At A  FREE of CAD $100 on November 28th. Register for your free ticket at ${EVENT_INFO.ticketUrl}`;
+    const message = `Join me at MAMA CONCERT 2026 on ${EVENT_INFO.date}! Tickets are CAD $100. Get yours at ${EVENT_INFO.ticketUrl}`;
     const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank', 'width=600,height=400');
   };
@@ -42,7 +42,7 @@ const MissionSection = () => {
           }}
         >
           <Image
-            src="images/event-img/img15.jpeg"
+            src="/images/event-img/img15.jpeg"
             alt="Mama Concert Crowd Desktop"
             fill
             style={{ objectFit: 'cover' }}
@@ -59,7 +59,7 @@ const MissionSection = () => {
           }}
         >
           <Image
-            src="images/event-img/img15.jpeg"
+            src="/images/event-img/img15.jpeg"
             alt="Mama Concert Crowd Mobile"
             fill
             style={{ objectFit: 'cover' }}
@@ -88,30 +88,31 @@ const MissionSection = () => {
         <Box sx={{ maxWidth: '800px' }}>
           {/* Main Headline */}
           <Typography
-            variant="h2"
+            component="h2"
             sx={{
               fontSize: { xs: '2.5rem', sm: '3.5rem', md: '5rem', lg: '6rem' },
               fontWeight: 900,
               color: 'white',
               textTransform: 'uppercase',
-              mb: 0, // raw.html has margin:0
+              m: 0,
               lineHeight: 1,
               textShadow: '0 2px 8px rgba(0,0,0,0.66), 0 0.5px 1px rgba(0,0,0,0.25)',
               willChange: 'transform',
             }}
           >
-            ONE GOD,
+            ONE HEART,
             <br />
-            ONE ALTAR,
+            ONE VOICE,
             <br />
-            ONE PRAISE
+            ONE GOD
           </Typography>
 
           {/* Description */}
           <Typography
+            component="p"
             sx={{
               fontSize: 'clamp(1rem, 2.5vw, 1.2rem)',
-              fontFamily: 'var(--font-inter)', // Assuming this var exists or will fall back
+              fontFamily: 'var(--font-inter)',
               color: 'white',
               mt: '24px',
               mb: 6,
@@ -121,62 +122,70 @@ const MissionSection = () => {
               textShadow: '0 2px 8px rgba(0,0,0,0.66), 0 0.5px 1px rgba(0,0,0,0.25)',
             }}
           >
-            MAMA CONCERT is a gospel concert experience bringing together believers from all walks of life to worship, connect, and be transformed. Join us for an unforgettable night of powerful music, inspiring messages, and a celebration of faith that unites us all.
+            Mama Concert is the expression of a city on fire for Jesus. One heart, one sound as we celebrate worship in 2026.
           </Typography>
 
           {/* CTA Buttons */}
-          <Stack
-            direction={{ xs: 'column', sm: 'row' }}
-            spacing={2}
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: { xs: 'column', sm: 'row' },
+              gap: 2,
+            }}
           >
             <Button
-              variant="contained"
+              variant="text"
               size="large"
               onClick={handleGetTicket}
               data-testid="tf-v1-popup"
               sx={{
-                px: 5,
+                px: 4,
                 py: 2,
-                fontSize: '1rem',
+                fontSize: { xs: '0.95rem', md: '1rem' },
                 fontWeight: 700,
-                backgroundColor: '#3b82f6',
-                color: 'white',
-                borderRadius: '4px',
+                backgroundColor: 'white',
+                color: '#000',
+                borderRadius: '8px',
                 textTransform: 'uppercase',
-                width: { xs: '100%', sm: 'auto' },
+                minWidth: { xs: '100%', sm: '200px' },
+                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+                transition: 'all 0.2s ease',
                 '&:hover': {
-                  backgroundColor: '#2563eb',
+                  backgroundColor: '#f5f5f5',
+                  transform: 'translateY(-2px)',
+                  boxShadow: '0 6px 16px rgba(0, 0, 0, 0.3)',
                 },
               }}
             >
-              GET YOUR TICKET NOW
+              GET YOUR TICKET
             </Button>
             <Button
-              variant="outlined"
+              variant="text"
               size="large"
               onClick={handleInviteFriend}
               data-testid="tf-v1-popup"
               sx={{
-                px: 5,
+                px: 4,
                 py: 2,
-                fontSize: '1rem',
+                fontSize: { xs: '0.95rem', md: '1rem' },
                 fontWeight: 700,
-                borderColor: 'white',
-                borderWidth: '2px',
+                backgroundColor: 'rgba(255, 255, 255, 0.15)',
                 color: 'white',
-                borderRadius: '4px',
+                borderRadius: '8px',
                 textTransform: 'uppercase',
-                width: { xs: '100%', sm: 'auto' },
+                minWidth: { xs: '100%', sm: '200px' },
+                backdropFilter: 'blur(10px)',
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                transition: 'all 0.2s ease',
                 '&:hover': {
-                  borderColor: 'white',
-                  borderWidth: '2px',
-                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                  backgroundColor: 'rgba(255, 255, 255, 0.25)',
+                  transform: 'translateY(-2px)',
                 },
               }}
             >
               INVITE A FRIEND
             </Button>
-          </Stack>
+          </Box>
         </Box>
       </Container>
     </Box>
