@@ -6,16 +6,16 @@ import { Box, Typography } from '@mui/material';
 
 const GallerySection = () => {
   const showcaseImages = [
-    { id: 1, src: 'images/event-img/img1.jpeg', alt: 'Worship concert crowd' },
-    { id: 2, src: 'images/event-img/img2.jpeg', alt: 'Concert lighting' },
-    { id: 3, src: 'images/event-img/img3.jpeg', alt: 'Musician playing' },
-    { id: 4, src: 'images/event-img/img4.jpeg', alt: 'Concert atmosphere' },
-    { id: 5, src: 'images/event-img/img5.jpeg', alt: 'Audience enjoying music' },
-    { id: 6, src: 'images/event-img/img6.jpeg', alt: 'Stage lights' },
-    { id: 7, src: 'images/event-img/img7.jpeg', alt: 'Microphone' },
-    { id: 8, src: 'images/event-img/img8.jpeg', alt: 'Concert hands raised' },
-    { id: 9, src: 'images/event-img/img9.jpeg', alt: 'Singer performing' },
-    { id: 10, src: 'images/event-img/img10.jpeg', alt: 'Concert finale' },
+    { id: 1, src: '/images/event-img/img1.jpeg', alt: 'Preview from Mama Concert' },
+    { id: 2, src: '/images/event-img/img2.jpeg', alt: 'Preview from Mama Concert' },
+    { id: 3, src: '/images/event-img/img3.jpeg', alt: 'Preview from Mama Concert' },
+    { id: 4, src: '/images/event-img/img4.jpeg', alt: 'Preview from Mama Concert' },
+    { id: 5, src: '/images/event-img/img5.jpeg', alt: 'Preview from Mama Concert' },
+    { id: 6, src: '/images/event-img/img6.jpeg', alt: 'Preview from Mama Concert' },
+    { id: 7, src: '/images/event-img/img7.jpeg', alt: 'Preview from Mama Concert' },
+    { id: 8, src: '/images/event-img/img8.jpeg', alt: 'Preview from Mama Concert' },
+    { id: 9, src: '/images/event-img/img9.jpeg', alt: 'Preview from Mama Concert' },
+    { id: 10, src: '/images/event-img/img10.jpeg', alt: 'Preview from Mama Concert' },
   ];
 
   return (
@@ -77,13 +77,13 @@ const GallerySection = () => {
         }}
       >
         <Typography
-          variant="h2"
+          component="h2"
           sx={{
             fontSize: { xs: '3rem', md: '5rem', lg: '7rem' },
             fontWeight: 900,
             color: 'white',
             textTransform: 'uppercase',
-            mb: 2,
+            mb: 3,
             lineHeight: 0.9,
             textShadow: '0 4px 20px rgba(0,0,0,0.5)',
           }}
@@ -93,13 +93,14 @@ const GallerySection = () => {
           OF GLORY
         </Typography>
         <Typography
-          variant="h3"
+          component="h3"
           sx={{
             fontSize: { xs: '1.25rem', md: '1.75rem', lg: '2.25rem' },
             fontWeight: 700,
-            color: '#b8860b',// dark golden
+            color: '#60a5fa',
             textTransform: 'uppercase',
             letterSpacing: '0.1em',
+            textShadow: '0 2px 8px rgba(0,0,0,0.5)',
           }}
         >
           MAMA CONCERT 2026
@@ -109,16 +110,16 @@ const GallerySection = () => {
       {/* Floating Gallery Images */}
       {showcaseImages.map((image, index) => {
         const positions = [
-          { top: '15%', left: '10%', width: 180, height: 120 },
-          { top: '10%', right: '15%', width: 200, height: 130 },
-          { bottom: '20%', left: '8%', width: 170, height: 110 },
-          { bottom: '15%', right: '12%', width: 190, height: 125 },
-          { top: '40%', left: '5%', width: 160, height: 105 },
-          { top: '45%', right: '8%', width: 185, height: 120 },
-          { top: '60%', left: '15%', width: 175, height: 115 },
-          { bottom: '40%', right: '20%', width: 195, height: 130 },
-          { top: '25%', left: '30%', width: 165, height: 110 },
-          { bottom: '30%', right: '35%', width: 180, height: 120 },
+          { top: '15%', left: '10%', width: 250, height: 150 },
+          { top: '10%', right: '15%', width: 250, height: 150 },
+          { bottom: '20%', left: '8%', width: 250, height: 150 },
+          { bottom: '15%', right: '12%', width: 250, height: 150 },
+          { top: '40%', left: '5%', width: 250, height: 150 },
+          { top: '45%', right: '8%', width: 250, height: 150 },
+          { top: '60%', left: '15%', width: 250, height: 150 },
+          { bottom: '40%', right: '20%', width: 250, height: 150 },
+          { top: '25%', left: '30%', width: 250, height: 150 },
+          { bottom: '30%', right: '35%', width: 250, height: 150 },
         ];
 
         const position = positions[index] || positions[0];
@@ -130,13 +131,15 @@ const GallerySection = () => {
               position: 'absolute',
               ...position,
               display: { xs: index < 4 ? 'block' : 'none', md: 'block' },
-              borderRadius: '8px',
+              borderRadius: '4px',
               overflow: 'hidden',
-              boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+              boxShadow: '0 10px 30px rgba(0,0,0,0.4)',
               transition: 'transform 0.3s ease',
+              border: '2px solid rgba(255, 255, 255, 0.1)',
               '&:hover': {
-                transform: 'scale(1.05)',
+                transform: 'scale(1.08)',
                 zIndex: 10,
+                boxShadow: '0 15px 40px rgba(0,0,0,0.5)',
               },
             }}
           >
@@ -145,6 +148,7 @@ const GallerySection = () => {
               alt={image.alt}
               width={position.width}
               height={position.height}
+              loading="lazy"
               style={{
                 width: '100%',
                 height: '100%',
