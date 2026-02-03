@@ -23,22 +23,11 @@ const FAQSection = () => {
       ref={ref}
       sx={{
         py: { xs: 10, md: 16 },
-        bgcolor: '#111827', // gray-900
+        bgcolor: '#020617',
         position: 'relative',
         overflow: 'hidden',
       }}
     >
-      {/* Background Pattern */}
-      <Box sx={{ position: 'absolute', inset: 0, opacity: 0.05 }}>
-        <Box
-          sx={{
-            position: 'absolute',
-            inset: 0,
-            backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")",
-          }}
-        />
-      </Box>
-
       <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 10 }}>
         {/* Section Header */}
         <motion.div
@@ -46,13 +35,43 @@ const FAQSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <Box sx={{ textAlign: 'center', mb: 8 }}>
-            <Typography variant="h2" sx={{ fontSize: { xs: '2.5rem', md: '3rem', lg: '3.75rem' }, fontWeight: 900, color: 'white', mb: 2, textTransform: 'uppercase' }}>
-              Frequently Asked Questions
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 6, flexDirection: { xs: 'column', md: 'row' }, gap: 3 }}>
+            <Typography
+              variant="h2"
+              id="faq-heading"
+              aria-label="FAQS"
+              sx={{
+                fontSize: { xs: '2.5rem', md: '3rem', lg: '3.75rem' },
+                fontWeight: 900,
+                color: 'white',
+                textTransform: 'uppercase'
+              }}
+            >
+              FAQS
             </Typography>
-            <Typography variant="body1" sx={{ fontSize: '1.25rem', color: '#9ca3af' }}> {/* gray-400 */}
-              What you need to know about Mama Concert Toronto 2026
-            </Typography>
+            <Box
+              component="a"
+              href="mailto:openheavens@houseofpraise.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                px: 4,
+                py: 2,
+                bgcolor: 'white',
+                color: 'black',
+                borderRadius: '0.5rem',
+                fontWeight: 700,
+                textDecoration: 'none',
+                textTransform: 'none',
+                fontSize: '1rem',
+                transition: 'background-color 0.2s',
+                '&:hover': {
+                  bgcolor: '#e5e5e5',
+                }
+              }}
+            >
+              Contact Us
+            </Box>
           </Box>
         </motion.div>
 
@@ -62,7 +81,11 @@ const FAQSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <Box sx={{ maxWidth: '48rem', mx: 'auto' }}>
+          <Box
+            role="region"
+            aria-label="Frequently Asked Questions"
+            sx={{ mb: 6 }}
+          >
             <Accordion items={accordionItems} />
           </Box>
         </motion.div>
@@ -73,22 +96,31 @@ const FAQSection = () => {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <Box sx={{ textAlign: 'center', mt: 6 }}>
-            <Typography sx={{ color: '#9ca3af', fontSize: '1.125rem' }}>
-              Still have questions?{" "}
-              <Box
-                component="a"
-                href="#contact"
-                sx={{
-                  color: '#eab308', // accent-500
-                  fontWeight: 700,
-                  textDecoration: 'underline',
-                  '&:hover': { color: '#facc15' } // accent-400
-                }}
-              >
-                Contact us
-              </Box>
-            </Typography>
+          <Box sx={{ textAlign: 'center' }}>
+            <Box
+              component="a"
+              href="mailto:openheavens@houseofpraise.ca"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                display: 'inline-block',
+                px: 4,
+                py: 2,
+                bgcolor: 'white',
+                color: 'black',
+                borderRadius: '0.5rem',
+                fontWeight: 700,
+                textDecoration: 'none',
+                textTransform: 'none',
+                fontSize: '1rem',
+                transition: 'background-color 0.2s',
+                '&:hover': {
+                  bgcolor: '#e5e5e5',
+                }
+              }}
+            >
+              Contact Us
+            </Box>
           </Box>
         </motion.div>
       </Container>
