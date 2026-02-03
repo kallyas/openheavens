@@ -1,9 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Box, Typography } from "@mui/material";
-import { FaChevronDown } from "react-icons/fa";
+import React from "react";
+import {
+  Accordion as MuiAccordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+  Box,
+} from "@mui/material";
+import { FaPlus, FaMinus } from "react-icons/fa";
 import type { AccordionItem } from "@/types";
 
 interface AccordionProps {
@@ -12,70 +17,90 @@ interface AccordionProps {
 }
 
 const Accordion: React.FC<AccordionProps> = ({ items, className }) => {
-  const [openId, setOpenId] = useState<number | null>(null);
+  const [expanded, setExpanded] = React.useState<number | false>(false);
 
-  const toggleItem = (id: number) => {
-    setOpenId(openId === id ? null : id);
+  const handleChange = (panel: number) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+    setExpanded(isExpanded ? panel : false);
   };
 
   return (
     <Box className={className} sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
       {items.map((item) => (
-        <Box
+        <MuiAccordion
           key={item.id}
+          expanded={expanded === item.id}
+          onChange={handleChange(item.id)}
+          disableGutters
+          elevation={0}
           sx={{
-            border: '1px solid',
-            borderColor: 'rgba(55, 65, 81, 1)', // gray-700
-            borderRadius: '0.5rem',
-            overflow: 'hidden',
-            bgcolor: 'rgba(17, 24, 39, 0.5)', // gray-900/50
-            backdropFilter: 'blur(4px)',
+            bgcolor: 'transparent',
+            borderTop: '1px solid rgba(255, 255, 255, 0.1)',
+            borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+            borderLeft: 'none',
+            borderRight: 'none',
+            '&:before': {
+              display: 'none',
+            },
+            '&.Mui-expanded': {
+              margin: 0,
+            },
           }}
         >
-          <Box
-            component="button"
-            onClick={() => toggleItem(item.id)}
+          <AccordionSummary
+            expandIcon={
+              expanded === item.id ? (
+                <FaMinus style={{ color: 'white', fontSize: '1.25rem' }} />
+              ) : (
+                <FaPlus style={{ color: 'white', fontSize: '1.25rem' }} />
+              )
+            }
             sx={{
-              width: '100%',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              p: 3,
-              textAlign: 'left',
-              transition: 'background-color 0.2s',
-              bgcolor: 'transparent',
-              border: 'none',
-              cursor: 'pointer',
-              color: 'inherit',
-              '&:hover': {
-                bgcolor: 'rgba(31, 41, 55, 0.5)', // gray-800/50
+              px: 0,
+              py: 2,
+              minHeight: 'auto',
+              '&.Mui-expanded': {
+                minHeight: 'auto',
+              },
+              '& .MuiAccordionSummary-content': {
+                margin: 0,
+                '&.Mui-expanded': {
+                  margin: 0,
+                },
               },
             }}
           >
-            <Typography sx={{ fontWeight: 700, fontSize: '1.125rem', color: 'white' }}>{item.title}</Typography>
-            <motion.div
-              animate={{ rotate: openId === item.id ? 180 : 0 }}
-              transition={{ duration: 0.3 }}
+            <Typography
+              variant="body1"
+              sx={{
+                fontWeight: 600,
+                fontSize: '1.25rem',
+                color: 'white',
+                letterSpacing: '0.025em'
+              }}
             >
-              <FaChevronDown style={{ color: '#eab308', fontSize: '1.25rem' }} /> {/* accent-500 */}
-            </motion.div>
-          </Box>
-
-          <AnimatePresence>
-            {openId === item.id && (
-              <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: "auto", opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.3 }}
-              >
-                <Box sx={{ px: 3, pb: 3, color: '#d1d5db', lineHeight: 1.625 }}> {/* gray-300 */}
-                  {item.content}
-                </Box>
-              </motion.div>
-            )}
-          </AnimatePresence>
-        </Box>
+              {item.title}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails
+            sx={{
+              px: 0,
+              pb: 3,
+              pt: 0,
+            }}
+          >
+            <Typography
+              variant="body1"
+              sx={{
+                color: '#d1d5db',
+                lineHeight: 1.625,
+                fontSize: '1.125rem',
+                letterSpacing: '0.015em'
+              }}
+            >
+              {item.content}
+            </Typography>
+          </AccordionDetails>
+        </MuiAccordion>
       ))}
     </Box>
   );
