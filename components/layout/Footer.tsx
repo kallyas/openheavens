@@ -39,19 +39,17 @@ const Footer = () => {
             mb: 8,
           }}
         >
-           {/* Logo Placeholder */}
-           <Typography
-                variant="h2"
-                sx={{
-                    fontWeight: 900,
-                    textTransform: 'uppercase',
-                    letterSpacing: '-0.02em',
-                    mb: 3,
-                    fontSize: { xs: '2rem', md: '3rem' }
-                }}
-            >
-                MAMA CONCERT 2026
-            </Typography>
+           {/* Logo */}
+          <Box
+            component="img"
+            src="/images/logo/concert.png"
+            alt="Open Heavens"
+            sx={{
+              width: { xs: '200px', sm: '300px', md: '400px' },
+              height: 'auto',
+              mb: 3,
+            }}
+          />
 
           <Typography sx={{ mb: 3, maxWidth: '600px', mx: 'auto', fontSize: '1.1rem', lineHeight: 1.6 }}>
             Register to get your ticket. <br />
@@ -65,45 +63,26 @@ const Footer = () => {
             </a>
           </Typography>
           <Button
-  component="a"
-  href="https://form.typeform.com/to/Ij072pJa?typeform-source=helicon-dinosaur-2nx4.squarespace.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  variant="contained"
-  size="large"
-  sx={{
-    backgroundColor: "white",
-    color: "black",
-    fontWeight: 700,
-    px: 4,
-    py: 1.5,
-    borderRadius: "50px",
-    "&:hover": {
-      backgroundColor: "#b8860b",
-    },
-  }}
->
-  Register
-</Button>
-
-
-          {/* <Button
-            variant="contained"
-            size="large"
+            component="a"
+            href="https://form.typeform.com/to/Ij072pJa?typeform-source=helicon-dinosaur-2nx4.squarespace.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="tf-v1-popup"
             sx={{
-              backgroundColor: 'white',
-              color: 'black',
+              backgroundColor: "white",
+              color: "black",
               fontWeight: 700,
               px: 4,
               py: 1.5,
-              borderRadius: '50px',
+              textTransform: 'none',
+              fontSize: '1rem',
               '&:hover': {
-                backgroundColor: '#b8860b',
+                backgroundColor: '#f5f5f5',
               },
             }}
           >
             Register
-          </Button> */}
+          </Button>
         </Box>
 
         {/* Links Section */}
@@ -123,11 +102,11 @@ const Footer = () => {
             {/* Resources */}
             <Grid size={{ xs: 12, sm: 4, md: 3 }}>
                 <Typography variant="h6" sx={{ fontWeight: 700, mb: 2, textTransform: 'uppercase' }}>
-                    Mama Concert Resources
+                    Open Heavens Resources
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-                    <a href="#" style={{ color: '#9ca3af', textDecoration: 'none' }}>Get Involved</a>
-                    <a href="#" style={{ color: '#9ca3af', textDecoration: 'none' }}>Get Your Ticket Now</a>
+                    <a href="https://Hopevents.typeform.com/OHVol2025" target="_blank" rel="noopener noreferrer" style={{ color: '#9ca3af', textDecoration: 'none' }}>Get Involved</a>
+                    <a href="https://Hopevents.typeform.com/OH2025" target="_blank" rel="noopener noreferrer" style={{ color: '#9ca3af', textDecoration: 'none' }}>Get Your Free Ticket</a>
                 </Box>
             </Grid>
 
@@ -137,14 +116,14 @@ const Footer = () => {
                     Social Media
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 2 }}>
-                    <a href="#" style={{ color: '#9ca3af', textDecoration: 'none' }}>Youtube</a>
-                    <a href="#" style={{ color: '#9ca3af', textDecoration: 'none' }}>Facebook</a>
-                    <a href="#" style={{ color: '#9ca3af', textDecoration: 'none' }}>Instagram</a>
+                    <a href="https://www.youtube.com/hopraise/live" target="_blank" rel="noopener noreferrer" style={{ color: '#9ca3af', textDecoration: 'none' }}>Youtube</a>
+                    <a href="https://www.facebook.com/Hopraise/" target="_blank" rel="noopener noreferrer" style={{ color: '#9ca3af', textDecoration: 'none' }}>Facebook</a>
+                    <a href="https://www.instagram.com/hopraise/" target="_blank" rel="noopener noreferrer" style={{ color: '#9ca3af', textDecoration: 'none' }}>Instagram</a>
                 </Box>
                 <Box sx={{ display: 'flex', gap: 2 }}>
-                    <a href="#" style={{ color: 'white' }}><YouTubeIcon /></a>
-                    <a href="#" style={{ color: 'white' }}><FacebookIcon /></a>
-                    <a href="#" style={{ color: 'white' }}><InstagramIcon /></a>
+                    <a href="https://www.youtube.com/hopraise/live" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}><YouTubeIcon /></a>
+                    <a href="https://www.facebook.com/Hopraise/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}><FacebookIcon /></a>
+                    <a href="https://www.instagram.com/hopraise/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}><InstagramIcon /></a>
                 </Box>
             </Grid>
         </Grid>
@@ -155,15 +134,15 @@ const Footer = () => {
                 LOCATION
             </Typography>
             <Typography variant="h6" sx={{ fontWeight: 400 }}>
-               Metro Toronto Convention Centre,<br />
-                255 Front St W, Toronto, ON M5V 2W6
+               The International Centre,<br />
+                6900 Airport RD Toronto - Hall 5
             </Typography>
         </Box>
 
         {/* Copyright */}
         <Box sx={{ textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.1)', pt: 4 }}>
           <Typography sx={{ color: '#9ca3af', fontSize: '0.875rem' }}>
-            Copyright © {new Date().getFullYear()} MAMA CONCERT 2026. All rights reserved.
+            Copyright © {new Date().getFullYear()} OPEN HEAVENS TORONTO
           </Typography>
         </Box>
       </Container>
