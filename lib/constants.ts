@@ -215,10 +215,11 @@ export const SOCIAL_LINKS = {
 export const NAV_LINKS = [
   { id: 1, label: "Home", href: "/" },
   { id: 2, label: "Artists", href: "/ArtistsSection" },
-  { id: 3, label: "Schedule", href: "#schedule" },
-  { id: 4, label: "Transportation", href: "/TransportationSection" },
-  { id: 5, label: "Get Tickets", href: EVENT_INFO.ticketUrl, external: true },
-  { id: 6, label: "Volunteer", href: "#volunteer" },
+  { id: 3, label: "Gallery", href: "/gallery" },
+  { id: 4, label: "Schedule", href: "#schedule" },
+  { id: 5, label: "Transportation", href: "/TransportationSection" },
+  { id: 6, label: "Get Tickets", href: EVENT_INFO.ticketUrl, external: true },
+  { id: 7, label: "Volunteer", href: "#volunteer" },
 ];
 
 // Footer Links
