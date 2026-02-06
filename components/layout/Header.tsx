@@ -97,7 +97,7 @@ const Header = () => {
                     width="97"
                     height="40"
                     style={{ color: 'transparent', objectFit: 'contain', width: '100%', height: 'auto' }}
-                    src="/images/hero/mama-concert.png" // Temporary placeholder or use text
+                    src="/images/logo/concert.png" // Temporary placeholder or use text
                     // In a real scenario, we'd use the actual logo asset. For now, let's use a text fallback if image fails or just text.
                     // But to match pixel perfect, I will try to simulate the layout.
                     onError={(e) => {
