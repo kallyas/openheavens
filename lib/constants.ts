@@ -1,3 +1,5 @@
+import type { NavLink } from "@/types";
+
 // Event Information
 export const EVENT_INFO = {
   title: "MAMA CONCERT 2026",
@@ -212,7 +214,7 @@ export const SOCIAL_LINKS = {
 };
 
 // Navigation Links
-export const NAV_LINKS = [
+export const NAV_LINKS: NavLink[] = [
   { id: 1, label: "Home", href: "/" },
   { id: 2, label: "Artists", href: "/#featuring" },
   { id: 3, label: "Gallery", href: "/gallery" },
