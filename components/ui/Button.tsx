@@ -12,7 +12,7 @@ const Button: React.FC<ButtonProps> = ({
   className,
   external = false,
   disabled = false,
-  ...props
+  sx,
 }) => {
 
   const getVariantStyles = () => {
@@ -25,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
           '&:hover': {
             background: 'linear-gradient(to right, #f97316, #fdba74)', // secondary-500 to secondary-300
             boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-            transform: 'scale(1.05)',
+            transform: 'translateY(-2px)',
           }
         };
       case 'secondary':
@@ -36,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({
           '&:hover': {
             background: 'linear-gradient(to right, #eab308, #fde047)', // accent-500 to accent-300
             boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-            transform: 'scale(1.05)',
+            transform: 'translateY(-2px)',
           }
         };
       case 'outline':
@@ -47,6 +47,7 @@ const Button: React.FC<ButtonProps> = ({
           '&:hover': {
             bgcolor: 'white',
             color: '#111827', // gray-900
+            transform: 'translateY(-2px)',
           }
         };
       case 'ghost':
@@ -55,6 +56,7 @@ const Button: React.FC<ButtonProps> = ({
           bgcolor: 'transparent',
           '&:hover': {
             bgcolor: 'rgba(255, 255, 255, 0.1)',
+            transform: 'translateY(-2px)',
           }
         };
       default:
@@ -73,13 +75,14 @@ const Button: React.FC<ButtonProps> = ({
   const commonSx = {
     ...getVariantStyles(),
     ...getSizeStyles(),
-    fontWeight: 700,
+    minHeight: 48,
+    fontWeight: 800,
     textTransform: 'uppercase',
-    letterSpacing: '0.025em',
-    borderRadius: '0.5rem',
-    transition: 'all 0.3s',
+    letterSpacing: '0.04em',
+    borderRadius: '10px',
+    transition: 'transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease',
     textDecoration: 'none',
-    ...((props as any).sx || {}), // In case sx is passed via props or className (though className is different)
+    ...(sx || {}),
   };
 
   if (href) {

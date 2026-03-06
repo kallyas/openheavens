@@ -54,6 +54,7 @@ export interface ButtonProps {
   className?: string;
   external?: boolean;
   disabled?: boolean;
+  sx?: SxProps<Theme>;
 }
 
 export interface CardProps {
@@ -67,3 +68,4 @@ export interface AccordionItem {
   title: string;
   content: string;
 }
+import { SxProps, Theme } from "@mui/material/styles";
