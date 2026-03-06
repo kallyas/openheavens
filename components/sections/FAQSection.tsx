@@ -52,8 +52,6 @@ const FAQSection = () => {
             <Box
               component="a"
               href="mailto:openheavens@houseofpraise.ca"
-              target="_blank"
-              rel="noopener noreferrer"
               sx={{
                 px: 4,
                 py: 2,
@@ -100,8 +98,6 @@ const FAQSection = () => {
             <Box
               component="a"
               href="mailto:openheavens@houseofpraise.ca"
-              target="_blank"
-              rel="noopener noreferrer"
               sx={{
                 display: 'inline-block',
                 px: 4,
