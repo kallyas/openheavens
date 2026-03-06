@@ -91,9 +91,9 @@ const Footer = () => {
                     More Info
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-                    <Link href="/#faq" style={{ color: '#9ca3af', textDecoration: 'none' }}>FAQs</Link>
+                    <Link href="/faq" style={{ color: '#9ca3af', textDecoration: 'none' }}>FAQs</Link>
                     <Link href="/share-MC" style={{ color: '#9ca3af', textDecoration: 'none' }}>Share This Event</Link>
-                    <Link href="/#contact" style={{ color: '#9ca3af', textDecoration: 'none' }}>Contact Us</Link>
+                    <Link href="/contact" style={{ color: '#9ca3af', textDecoration: 'none' }}>Contact Us</Link>
                 </Box>
             </Grid>
 
@@ -103,7 +103,7 @@ const Footer = () => {
                     Mama Concert Resources
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-                    <a href="https://Hopevents.typeform.com/OHVol2025" style={{ color: '#9ca3af', textDecoration: 'none' }}>Get Involved</a>
+                    <a href="#" style={{ color: '#9ca3af', textDecoration: 'none' }}>Get Involved</a>
                     <a href={EVENT_INFO.ticketUrl} style={{ color: '#9ca3af', textDecoration: 'none' }}>Get Your Ticket</a>
                 </Box>
             </Grid>
