@@ -114,9 +114,9 @@ const Footer = () => {
                     Social Media
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 2 }}>
-                    <a href="https://www.youtube.com/hopraise/live" style={{ color: '#9ca3af', textDecoration: 'none' }}>Youtube</a>
-                    <a href="https://www.facebook.com/Hopraise/" style={{ color: '#9ca3af', textDecoration: 'none' }}>Facebook</a>
-                    <a href="https://www.instagram.com/hopraise/" style={{ color: '#9ca3af', textDecoration: 'none' }}>Instagram</a>
+                    <a href="https://www.youtube.com/channel/UC25q0tHU8ahS1R6fd3nUJXg" style={{ color: '#9ca3af', textDecoration: 'none' }}>Youtube</a>
+                    <a href="https://www.youtube.com/channel/UC25q0tHU8ahS1R6fd3nUJXg" style={{ color: '#9ca3af', textDecoration: 'none' }}>Facebook</a>
+                    <a href="https://www.youtube.com/channel/UC25q0tHU8ahS1R6fd3nUJXg" style={{ color: '#9ca3af', textDecoration: 'none' }}>Instagram</a>
                 </Box>
                 <Box sx={{ display: 'flex', gap: 2 }}>
                     <a href="https://www.youtube.com/hopraise/live" style={{ color: 'white' }}><YouTubeIcon /></a>
