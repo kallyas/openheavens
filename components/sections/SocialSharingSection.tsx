@@ -133,7 +133,7 @@ const SocialSharingSection = () => {
             <Button
               variant="outlined"
               size="large"
-              href="/share-OH"
+              href="/share-MC"
               sx={{
                 ...homeButtonSecondaryOnLightSx,
                 width: { xs: '100%', sm: 'auto' },

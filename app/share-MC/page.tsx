@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       "Help spread the word for Mama Concert by Pastor Judith Babirye. Share the official event poster.",
     type: "website",
-    url: "/share-OH",
+    url: "/share-MC",
     images: [
       {
         url: POSTER_URL,

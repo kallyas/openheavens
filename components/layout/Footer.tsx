@@ -92,7 +92,7 @@ const Footer = () => {
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
                     <Link href="/#faq" style={{ color: '#9ca3af', textDecoration: 'none' }}>FAQs</Link>
-                    <Link href="/share-OH" style={{ color: '#9ca3af', textDecoration: 'none' }}>Share This Event</Link>
+                    <Link href="/share-MC" style={{ color: '#9ca3af', textDecoration: 'none' }}>Share This Event</Link>
                     <Link href="/#contact" style={{ color: '#9ca3af', textDecoration: 'none' }}>Contact Us</Link>
                 </Box>
             </Grid>

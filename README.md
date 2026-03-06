@@ -41,7 +41,7 @@ The ticket checkout page is at `/tickets` and uses PayPal.
 - `/` home page
 - `/tickets` PayPal checkout
 - `/gallery` event gallery
-- `/share-OH` poster sharing page with OG metadata
+- `/share-MC` poster sharing page with OG metadata
 
 ## Notes
 
