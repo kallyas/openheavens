@@ -51,7 +51,7 @@ const FAQSection = () => {
             </Typography>
             <Box
               component="a"
-              href="mailto:openheavens@houseofpraise.ca"
+              href="mailto:judithbabiryefoundation@gmail.com"
               sx={{
                 px: 4,
                 py: 2,
