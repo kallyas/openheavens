@@ -5,7 +5,6 @@ import ScriptureQuote from "@/components/sections/ScriptureQuote";
 import FeaturesMarquee from "@/components/sections/FeaturesMarquee";
 import GallerySection from "@/components/sections/GallerySection";
 import CommunitySection from "@/components/sections/CommunitySection";
-import TransportationSection from "@/components/sections/TransportationSection";
 import VolunteerSection from "@/components/sections/VolunteerSection";
 import SocialSharingSection from "@/components/sections/SocialSharingSection";
 import FAQSection from "@/components/sections/FAQSection";
@@ -18,14 +17,13 @@ export default function Home() {
       <HeroSection />
       <MissionSection />
       <ArtistsSection />
-      <ScriptureQuote />
-      <FeaturesMarquee />
       <GallerySection />
       <CommunitySection />
-      <VolunteerSection />
-      <TransportationSection />
-      <FinalCTA />
+      <ScriptureQuote />
+      <FeaturesMarquee />
       <FAQSection />
+      <VolunteerSection />
+      <FinalCTA />
       <SocialSharingSection />
       <Banner />
     </>
