@@ -4,16 +4,17 @@ import React from 'react';
 import Image from 'next/image';
 import { Box, Typography, Container, Button } from '@mui/material';
 import { EVENT_INFO } from '@/lib/constants';
+import { homeButtonPrimaryOnDarkSx, homeButtonSecondaryOnDarkSx } from '@/lib/buttonStyles';
 
 const MissionSection = () => {
   const handleGetTicket = () => {
-    window.open(EVENT_INFO.ticketUrl, '_blank');
+    window.location.href = EVENT_INFO.ticketUrl;
   };
 
   const handleInviteFriend = () => {
     const message = `Join me at MAMA CONCERT 2026 on ${EVENT_INFO.date}! Tickets are CAD $100. Get yours at ${EVENT_INFO.ticketUrl}`;
     const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
-    window.open(url, '_blank', 'width=600,height=400');
+    window.location.href = url;
   };
 
   return (
@@ -139,22 +140,8 @@ const MissionSection = () => {
               onClick={handleGetTicket}
               data-testid="tf-v1-popup"
               sx={{
-                px: 4,
-                py: 2,
-                fontSize: { xs: '0.95rem', md: '1rem' },
-                fontWeight: 700,
-                backgroundColor: 'white',
-                color: '#000',
-                borderRadius: '8px',
-                textTransform: 'uppercase',
+                ...homeButtonPrimaryOnDarkSx,
                 minWidth: { xs: '100%', sm: '200px' },
-                boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
-                transition: 'all 0.2s ease',
-                '&:hover': {
-                  backgroundColor: '#f5f5f5',
-                  transform: 'translateY(-2px)',
-                  boxShadow: '0 6px 16px rgba(0, 0, 0, 0.3)',
-                },
               }}
             >
               GET YOUR TICKET
@@ -165,22 +152,8 @@ const MissionSection = () => {
               onClick={handleInviteFriend}
               data-testid="tf-v1-popup"
               sx={{
-                px: 4,
-                py: 2,
-                fontSize: { xs: '0.95rem', md: '1rem' },
-                fontWeight: 700,
-                backgroundColor: 'rgba(255, 255, 255, 0.15)',
-                color: 'white',
-                borderRadius: '8px',
-                textTransform: 'uppercase',
+                ...homeButtonSecondaryOnDarkSx,
                 minWidth: { xs: '100%', sm: '200px' },
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
-                transition: 'all 0.2s ease',
-                '&:hover': {
-                  backgroundColor: 'rgba(255, 255, 255, 0.25)',
-                  transform: 'translateY(-2px)',
-                },
               }}
             >
               INVITE A FRIEND
