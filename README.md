@@ -16,6 +16,18 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## PayPal Ticket Booking Setup
+
+This project includes a PayPal-powered ticket booking flow at `/tickets`.
+
+1. Copy `.env.example` to `.env.local`.
+2. Add your PayPal credentials:
+   - `NEXT_PUBLIC_PAYPAL_CLIENT_ID`
+   - `PAYPAL_CLIENT_ID`
+   - `PAYPAL_CLIENT_SECRET`
+   - `PAYPAL_ENV` (`sandbox` for testing, `live` for production)
+3. Restart the dev server after updating environment variables.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
