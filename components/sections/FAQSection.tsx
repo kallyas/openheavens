@@ -97,7 +97,7 @@ const FAQSection = () => {
           <Box sx={{ textAlign: 'center' }}>
             <Box
               component="a"
-              href="mailto:openheavens@houseofpraise.ca"
+              href="mailto:judithbabiryefoundation@gmail.com"
               sx={{
                 display: 'inline-block',
                 px: 4,
