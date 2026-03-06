@@ -55,7 +55,6 @@ const VolunteerSection = () => {
             >
               <Button
                 href="https://form.typeform.com/to/Ij072pJa?typeform-source=helicon-dinosaur-2nx4.squarespace.com"
-                external
                 variant="primary"
                 size="lg"
                 data-testid="tf-v1-popup"
