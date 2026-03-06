@@ -132,8 +132,8 @@ const Footer = () => {
                 LOCATION
             </Typography>
             <Typography variant="h6" sx={{ fontWeight: 400 }}>
-               The International Centre,<br />
-                6900 Airport RD Toronto - Hall 5
+               Metro Convention Centre,<br />
+               255 Front ST W, Toronto , ON M5V 2W6
             </Typography>
         </Box>
 
