@@ -2,23 +2,17 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { PiMegaphone } from "react-icons/pi";
 
 import {
   AppBar,
-  Toolbar,
   Box,
   IconButton,
   Drawer,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
   Typography,
   Container,
-  Button,
 } from '@mui/material';
-import CloseIcon from '@mui/icons-material/Close';
 import { NAV_LINKS } from '@/lib/constants';
 
 // Custom Hamburger Icon Component to match the rawhtml style
@@ -47,23 +41,68 @@ const HamburgerIcon = () => (
 );
 
 const Header = () => {
+  const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
+    const sectionIds = NAV_LINKS
+      .filter((link) => !link.external && link.href.startsWith('/#'))
+      .map((link) => link.href.replace('/#', ''));
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      if (pathname !== '/') return;
+
+      if (window.scrollY < 120) {
+        setActiveSection('home');
+        return;
+      }
+
+      let currentSection = 'home';
+      for (const id of sectionIds) {
+        const element = document.getElementById(id);
+        if (!element) continue;
+
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= 160 && rect.bottom > 160) {
+          currentSection = id;
+          break;
+        }
+      }
+
+      setActiveSection(currentSection);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    const handleHashChange = () => {
+      if (pathname !== '/') return;
+      const hash = window.location.hash.replace('#', '');
+      setActiveSection(hash || 'home');
+    };
+
+    handleScroll();
+    handleHashChange();
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('hashchange', handleHashChange);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('hashchange', handleHashChange);
+    };
+  }, [pathname]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const announcementText = "Join us for Mama Concert 2026 - Tickets at CAD $100! Experience massive worship on November 21st. Get your ticket now!";
+  const isLinkActive = (href: string, external?: boolean) => {
+    if (external) return false;
+    if (href === '/') return pathname === '/' && activeSection === 'home';
+    if (href.startsWith('/#')) return pathname === '/' && activeSection === href.replace('/#', '');
+    return pathname === href;
+  };
 
   return (
     <>
@@ -71,7 +110,9 @@ const Header = () => {
         position="fixed"
         elevation={0}
         sx={{
-          backgroundColor: 'transparent',
+          backgroundColor: isScrolled || isMobileMenuOpen ? 'rgba(3, 7, 18, 0.72)' : 'transparent',
+          backdropFilter: isScrolled || isMobileMenuOpen ? 'blur(10px)' : 'none',
+          borderBottom: isScrolled || isMobileMenuOpen ? '1px solid rgba(255,255,255,0.18)' : '1px solid transparent',
           transition: 'all 0.3s ease',
         }}
       >
@@ -365,50 +406,27 @@ const Header = () => {
               overflowY: 'auto',
             }}
           >
-            {NAV_LINKS.map((link) => (
-              <Box
-                component="li"
-                key={link.id}
-                sx={{
-                  borderBottom: '1px solid rgba(0, 0, 0, 0.05)',
-                }}
-              >
-                {link.external ? (
-                  <Box
-                    component="a"
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={toggleMobileMenu}
-                    sx={{
-                      display: 'block',
-                      px: 4,
-                      py: 2.5,
-                      textDecoration: 'none',
-                      color: '#000',
-                      fontSize: '1.1rem',
-                      fontFamily: 'Nexa Bold, sans-serif',
-                      fontWeight: 700,
-                      transition: 'all 0.2s ease',
-                      '&:hover': {
-                        backgroundColor: 'rgba(0, 0, 0, 0.03)',
-                        paddingLeft: '36px',
-                      },
-                    }}
-                  >
-                    {link.label}
-                  </Box>
-                ) : (
-                  <Link
-                    href={link.href}
-                    style={{ textDecoration: 'none' }}
-                    onClick={toggleMobileMenu}
-                  >
+            {NAV_LINKS.map((link) => {
+              const linkActive = isLinkActive(link.href, link.external);
+
+              return (
+                <Box
+                  component="li"
+                  key={link.id}
+                  sx={{
+                    borderBottom: '1px solid rgba(0, 0, 0, 0.05)',
+                  }}
+                >
+                  {link.external ? (
                     <Box
+                      component="a"
+                      href={link.href}
+                      onClick={toggleMobileMenu}
                       sx={{
                         display: 'block',
                         px: 4,
                         py: 2.5,
+                        textDecoration: 'none',
                         color: '#000',
                         fontSize: '1.1rem',
                         fontFamily: 'Nexa Bold, sans-serif',
@@ -422,10 +440,37 @@ const Header = () => {
                     >
                       {link.label}
                     </Box>
-                  </Link>
-                )}
-              </Box>
-            ))}
+                  ) : (
+                    <Link
+                      href={link.href}
+                      style={{ textDecoration: 'none' }}
+                      onClick={toggleMobileMenu}
+                    >
+                      <Box
+                        sx={{
+                          display: 'block',
+                          px: 4,
+                          py: 2.5,
+                          color: linkActive ? '#1d4ed8' : '#000',
+                          fontSize: '1.1rem',
+                          fontFamily: 'Nexa Bold, sans-serif',
+                          fontWeight: 700,
+                          backgroundColor: linkActive ? 'rgba(37, 99, 235, 0.12)' : 'transparent',
+                          borderLeft: linkActive ? '4px solid #1d4ed8' : '4px solid transparent',
+                          transition: 'all 0.2s ease',
+                          '&:hover': {
+                            backgroundColor: 'rgba(0, 0, 0, 0.03)',
+                            paddingLeft: '36px',
+                          },
+                        }}
+                      >
+                        {link.label}
+                      </Box>
+                    </Link>
+                  )}
+                </Box>
+              );
+            })}
           </Box>
 
           {/* Contact Us Section */}
@@ -474,8 +519,6 @@ const Header = () => {
               <IconButton
                 component="a"
                 href="https://instagram.com/victoryintchurchcanada"
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label="Instagram"
                 sx={{
                   color: '#000',
@@ -499,8 +542,6 @@ const Header = () => {
               <IconButton
                 component="a"
                 href="https://youtube.com/mamaconcert"
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label="YouTube"
                 sx={{
                   color: '#000',
