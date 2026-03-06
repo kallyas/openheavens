@@ -1,24 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Mama Concert Website
 
-## Getting Started
+Marketing and ticketing site for **Mama Concert by Pastor Judith Babirye**.
 
-First, run the development server:
+## Local Development
+
+Install dependencies and run the app:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Scripts
+
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
+```
+
 ## PayPal Ticket Booking Setup
 
-This project includes a PayPal-powered ticket booking flow at `/tickets`.
+The ticket checkout page is at `/tickets` and uses PayPal.
 
 1. Copy `.env.example` to `.env.local`.
 2. Add your PayPal credentials:
@@ -26,23 +32,22 @@ This project includes a PayPal-powered ticket booking flow at `/tickets`.
    - `PAYPAL_CLIENT_ID`
    - `PAYPAL_CLIENT_SECRET`
    - `PAYPAL_ENV` (`sandbox` for testing, `live` for production)
-3. Restart the dev server after updating environment variables.
+3. Optional but recommended for metadata/share URLs:
+   - `NEXT_PUBLIC_SITE_URL=https://your-domain.com`
+4. Restart the dev server after updating environment variables.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Routes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/` home page
+- `/tickets` PayPal checkout
+- `/gallery` event gallery
+- `/share-OH` poster sharing page with OG metadata
 
-## Learn More
+## Notes
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Poster assets for sharing are in `public/images/posters/`.
+- PayPal server endpoints:
+  - `POST /api/paypal/create-order`
+  - `POST /api/paypal/capture-order`
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
