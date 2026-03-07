@@ -44,7 +44,7 @@ const ArtistsSection = () => {
               letterSpacing: '0.05em',
             }}
           >
-            ALL POINTING TO JESUS
+            ALL POINTING TO JESUS AND MOTHER'S LOVE
           </Typography>
         </Box>
 
