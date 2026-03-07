@@ -123,7 +123,7 @@ const MissionSection = () => {
               textShadow: '0 2px 8px rgba(0,0,0,0.66), 0 0.5px 1px rgba(0,0,0,0.25)',
             }}
           >
-            Mama Concert is the expression of a city on fire for Jesus. One heart, one sound as we celebrate worship in 2026.
+            Mama Concert is the expression of a city on fire for Jesus. One heart, one sound as we celebrate God and Our Mothers.
           </Typography>
 
           {/* CTA Buttons */}
