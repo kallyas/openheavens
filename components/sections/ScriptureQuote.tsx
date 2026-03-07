@@ -58,7 +58,7 @@ const ScriptureQuote = () => {
             }}
           >
             <ReactPlayer
-              src={'https://www.youtube.com/watch?v=L0ZhSMAzYr8'}
+              src={'https://music.youtube.com/channel/UC25q0tHU8ahS1R6fd3nUJXg'}
               width={'100%'}
               height={'100%'}
               playing={isPlaying}
@@ -123,9 +123,9 @@ const ScriptureQuote = () => {
                 color: '#60a5fa',
               }}
             >
-              The God of glory
+              Nothing Lasts 
             </Box>
-            {' '}appeared to our father Abraham when he was in Mesopotamia, before he dwelt in Haran."
+            {' '}Like A Mother's Love"
           </Box>
           <Box
             component="span"
