@@ -23,7 +23,7 @@ const getCountdown = (eventDate: Date): Countdown => {
 };
 
 const HeroSection = () => {
-  const eventDate = useMemo(() => new Date(`${EVENT_INFO.date} 19:00:00`), []);
+  const eventDate = useMemo(() => new Date(`${EVENT_INFO.date} 18:00:00`), []);
   const [countdown, setCountdown] = useState<Countdown>(() => getCountdown(eventDate));
 
   useEffect(() => {
