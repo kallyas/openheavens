@@ -133,7 +133,7 @@ const Footer = () => {
             </Typography>
             <Typography variant="h6" sx={{ fontWeight: 400 }}>
                Toronto Pavilion,<br />
-               190 Railside Rd, North York, ON M3A 1A
+               190 Railside Rd, North York, ON M3A 1A3
             </Typography>
         </Box>
 
