@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: `Share ${EVENT_INFO.title} Poster`,
   description:
-    "Share the official Mama Concert poster by Pastor Judith Babirye and invite your community to worship.",
+    "Share the official MAAMA Concert poster and invite your community to celebrate Black African women in healthcare.",
   openGraph: {
     title: `${EVENT_INFO.title} | Share Poster`,
     description:
-      "Help spread the word for Mama Concert by Pastor Judith Babirye. Share the official event poster.",
+      "Help spread the word for MAAMA Concert. Share the official event poster.",
     type: "website",
     url: "/share-MC",
     images: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
         url: POSTER_URL,
         width: 1200,
         height: 1500,
-        alt: "Mama Concert event poster by Pastor Judith Babirye",
+        alt: "MAAMA Concert event poster",
       },
     ],
   },
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${EVENT_INFO.title} | Share Poster`,
     description:
-      "Help spread the word for Mama Concert by Pastor Judith Babirye. Share the official event poster.",
+      "Help spread the word for MAAMA Concert. Share the official event poster.",
     images: [POSTER_URL],
   },
 };

@@ -43,7 +43,7 @@ const VolunteerSection = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
                 <Typography sx={{ fontSize: { xs: '1.125rem', md: '1.25rem' }, color: '#d1d5db', mb: 6, lineHeight: 1.625 }}>
-                There's nothing like serving in God's presence come be a part of something meaningful! Whether you love welcoming guests, setting up, or helping behind the scenes, every role helps create an atmosphere of worship, Love and joy. Step in, serve, and discover the best feeling ever.
+                Help welcome guests, support production, coordinate logistics, and create a warm experience for the women, families, and supporters gathering at MAAMA Concert. Every role contributes to a thoughtful and memorable event.
                 </Typography>
             </motion.div>
 

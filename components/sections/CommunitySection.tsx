@@ -10,9 +10,6 @@ const CommunitySection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  // Placeholder for photo album
-  const communityPhotos = [1, 2, 3, 4, 5, 6];
-
   return (
     <Box
       component="section"
@@ -44,9 +41,9 @@ const CommunitySection = () => {
                   lineHeight: 1.1,
                 }}
               >
-                This Could Be You
+                This Is The
                 <br />
-                At Mama Concert 2026
+                MAAMA Community
               </Typography>
 
               <Typography
@@ -57,9 +54,7 @@ const CommunitySection = () => {
                   lineHeight: 1.6,
                 }}
               >
-                People just like you, experiencing worship, connection, and
-                transformation. This isn't just a concert but a life-changing experience that brings people together from all walks of life.
-                Join us and be part of something extraordinary Worship , Praise.
+                Care workers, families, artists, and supporters gathering in one room to honour service, celebrate culture, and strengthen community connection. This is more than a stage moment. It is public recognition for women whose work sustains both households and healthcare systems.
               </Typography>
 
               <Button
@@ -67,7 +62,7 @@ const CommunitySection = () => {
                 variant="primary"
                 size="lg"
               >
-                Grab Your Seat Now
+                Join The Celebration
               </Button>
             </motion.div>
           </Grid>
@@ -103,7 +98,7 @@ const CommunitySection = () => {
                 >
                   <img
                     src="/images/event-img/img2.jpeg"
-                    alt="Community worship"
+                    alt="MAAMA Concert community celebration"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
                   <Box sx={{
@@ -114,7 +109,7 @@ const CommunitySection = () => {
                     alignItems: 'flex-end',
                     p: 3
                   }}>
-                    <Typography sx={{ color: 'white', fontWeight: 500, fontSize: '1.125rem' }}>Worship together</Typography>
+                    <Typography sx={{ color: 'white', fontWeight: 500, fontSize: '1.125rem' }}>Celebrate together</Typography>
                   </Box>
                 </motion.div>
 
@@ -127,7 +122,7 @@ const CommunitySection = () => {
                 >
                   <img
                     src="/images/event-img/img10.jpeg"
-                    alt="Singing together"
+                    alt="Performer on stage"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
                 </motion.div>
@@ -140,7 +135,7 @@ const CommunitySection = () => {
                 >
                   <img
                     src="/images/event-img/img8.jpeg"
-                    alt="Friends at concert"
+                    alt="Guests at MAAMA Concert"
                     style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                   />
                 </motion.div>

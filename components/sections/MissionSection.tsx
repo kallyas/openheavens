@@ -12,7 +12,7 @@ const MissionSection = () => {
   };
 
   const handleInviteFriend = () => {
-    const message = `Join me at MAMA CONCERT 2026 on ${EVENT_INFO.date}! Tickets are CAD $100. Get yours at ${EVENT_INFO.ticketUrl}`;
+    const message = `Join me at ${EVENT_INFO.title} on ${EVENT_INFO.date}. We are celebrating Black African women in healthcare. Tickets are CAD $100 at ${EVENT_INFO.ticketUrl}`;
     const url = `https://wa.me/?text=${encodeURIComponent(message)}`;
     window.location.href = url;
   };
@@ -44,7 +44,7 @@ const MissionSection = () => {
         >
           <Image
             src="/images/event-img/img15.jpeg"
-            alt="Mama Concert Crowd Desktop"
+            alt="MAAMA Concert crowd celebration"
             fill
             style={{ objectFit: 'cover' }}
             priority
@@ -61,7 +61,7 @@ const MissionSection = () => {
         >
           <Image
             src="/images/event-img/img15.jpeg"
-            alt="Mama Concert Crowd Mobile"
+            alt="MAAMA Concert audience gathering"
             fill
             style={{ objectFit: 'cover' }}
           />
@@ -101,11 +101,11 @@ const MissionSection = () => {
               willChange: 'transform',
             }}
           >
-            ONE HEART,
+            HONOUR.
             <br />
-            ONE VOICE,
+            CELEBRATE.
             <br />
-            ONE GOD
+            UPLIFT.
           </Typography>
 
           {/* Description */}
@@ -123,7 +123,7 @@ const MissionSection = () => {
               textShadow: '0 2px 8px rgba(0,0,0,0.66), 0 0.5px 1px rgba(0,0,0,0.25)',
             }}
           >
-            Mama Concert is the expression of a city on fire for Jesus. One heart, one sound as we celebrate God and Our Mothers.
+            MAAMA Concert creates space to recognize Black African women in Canada&apos;s healthcare sector through music, storytelling, and community celebration.
           </Typography>
 
           {/* CTA Buttons */}
