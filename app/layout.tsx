@@ -5,12 +5,12 @@ import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mama Concert Toronto 2026 - Tickets Available Now at CAD $100",
-  description: "Join us on November 21st at the Metro Convention Centre for an unforgettable night of worship and celebration. Featuring Judith Babirye, Pastor Wilson Bugembe, Levixon, and more. Tickets available now for CAD $100.",
-  keywords: "Mama Concert, Toronto, Gospel Concert, Worship,Judith Babirye, Pastor Wilson Bugembe, Levixon",
+  title: "MAAMA Concert Toronto 2026 - Tickets Available Now at CAD $100",
+  description: "Join us on November 21, 2026 at the Metro Convention Centre in Toronto for MAAMA Concert, a celebration honouring Black African women in healthcare through music, storytelling, and community.",
+  keywords: "MAAMA Concert, Toronto, Black women in healthcare, community concert, Judith Babirye, Wilson Bugembe, Levixone",
   openGraph: {
-    title: "Mama Concert Toronto 2026",
-    description: "A Ticket at CAD $100 ! November 28th | Metro Convention Centre",
+    title: "MAAMA Concert Toronto 2026",
+    description: "Tickets are CAD $100 | November 21, 2026 | Metro Convention Centre",
     type: "website",
     locale: "en_CA",
   },

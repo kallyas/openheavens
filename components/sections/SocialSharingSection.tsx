@@ -80,7 +80,7 @@ const SocialSharingSection = () => {
               lineHeight: 1.7,
             }}
           >
-            Let’s impact the community together through worship! Share our event poster online and invite your friends for a memorable Evening of praise, community, and powerful encounters.
+            Help more people discover the concert. Share the official poster with your community and invite families, healthcare workers, and supporters to celebrate Black African women in healthcare.
           </Typography>
 
           <Box

@@ -7,7 +7,7 @@ import Marquee from "@/components/ui/Marquee";
 
 const AnnouncementBanner = () => {
   const announcement =
-    "Join us for Mama Concert 2026 - A ticket at CAD $100 ! The massive Experience worship on November 28th. Get your ticket now!";
+    "Join us for MAAMA Concert 2026 in Toronto. Tickets are CAD $100. Celebrate Black African women in healthcare and reserve your seat now.";
 
   const announcements = Array(10).fill(announcement);
 

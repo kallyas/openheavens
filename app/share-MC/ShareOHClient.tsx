@@ -22,7 +22,7 @@ export default function ShareOHClient() {
 
   const shareText = useMemo(
     () =>
-      `Join us at ${EVENT_INFO.title} on ${EVENT_INFO.date} at ${EVENT_INFO.venue.name}.`,
+      `Join us at ${EVENT_INFO.title} on ${EVENT_INFO.date} at ${EVENT_INFO.venue.name} as we celebrate Black African women in healthcare.`,
     []
   );
 
@@ -64,7 +64,7 @@ export default function ShareOHClient() {
       <Container maxWidth="lg">
         <Box sx={{ textAlign: "center", mb: 5 }}>
           <Typography sx={{ color: "rgba(255,255,255,0.78)", letterSpacing: "0.08em", textTransform: "uppercase", fontWeight: 700, mb: 1 }}>
-            Share Mama Concert
+            Share MAAMA Concert
           </Typography>
           <Typography
             component="h1"
@@ -79,7 +79,7 @@ export default function ShareOHClient() {
             Spread The Poster
           </Typography>
           <Typography sx={{ color: "rgba(255,255,255,0.78)", maxWidth: 700, mx: "auto", mt: 1.2 }}>
-            Share this event poster with your community and invite others to worship.
+            Share this poster with your community and invite others to celebrate, honour, and uplift healthcare women.
           </Typography>
         </Box>
 
@@ -102,7 +102,7 @@ export default function ShareOHClient() {
           >
             <Image
               src={POSTER_URL}
-              alt="Mama Concert event poster by Pastor Judith Babirye"
+              alt="MAAMA Concert event poster"
               width={1200}
               height={1500}
               style={{ width: "100%", height: "auto", display: "block" }}

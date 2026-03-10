@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { Box, Typography, Container } from "@mui/material";
 import Accordion from "@/components/ui/Accordion";
-import { FAQ_DATA } from "@/lib/constants";
+import { EVENT_INFO, FAQ_DATA } from "@/lib/constants";
 
 const FAQSection = () => {
   const ref = useRef(null);
@@ -51,7 +51,7 @@ const FAQSection = () => {
             </Typography>
             <Box
               component="a"
-              href="mailto:openheavens@houseofpraise.ca"
+              href={`mailto:${EVENT_INFO.contact.email}`}
               sx={{
                 px: 4,
                 py: 2,
@@ -97,7 +97,7 @@ const FAQSection = () => {
           <Box sx={{ textAlign: 'center' }}>
             <Box
               component="a"
-              href="mailto:openheavens@houseofpraise.ca"
+              href={`mailto:${EVENT_INFO.contact.email}`}
               sx={{
                 display: 'inline-block',
                 px: 4,

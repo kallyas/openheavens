@@ -2,8 +2,8 @@ import type { NavLink } from "@/types";
 
 // Event Information
 export const EVENT_INFO = {
-  title: "MAMA CONCERT 2026",
-  subtitle: "Join us for an unforgettable worship!",
+  title: "MAAMA CONCERT 2026",
+  subtitle: "Honouring the hands that heal and celebrating the women who carry our communities.",
   date: "November 21, 2026",
   year: 2026,
   venue: {
@@ -21,7 +21,7 @@ export const EVENT_INFO = {
     email: "info@mamaconcert.com",
   },
   ticketUrl: "/tickets",
-  livestreamUrl: "https://youtube.com/hopraise/live",
+  livestreamUrl: "https://youtube.com/mamaconcert/live",
 };
 
 // Featured Artists
@@ -165,7 +165,7 @@ export const FAQ_DATA = [
     id: 3,
     question: "Can I bring my children?",
     answer:
-      "Absolutely! Mama Concert is a family-friendly event. We have dedicated Kids & Family Seating areas. Children of all ages are welcome to join us in worship.",
+      "Absolutely. MAAMA Concert is a family-friendly event with dedicated Kids & Family Seating areas so households can attend and celebrate together.",
   },
   {
     id: 4,
@@ -189,7 +189,7 @@ export const FAQ_DATA = [
     id: 7,
     question: "Can I watch online if I can't attend in person?",
     answer:
-      "Yes! The event will be livestreamed on our YouTube channel. Visit youtube.com/mamaconcert/live on 28th November to join us virtually from anywhere in the world.",
+      "Yes. The event will be livestreamed on our YouTube channel. Visit youtube.com/mamaconcert/live on November 21, 2026 to join virtually from anywhere in the world.",
   },
   {
     id: 8,
@@ -242,7 +242,7 @@ export const FOOTER_SECTIONS = [
   },
   {
     id: 3,
-    title: "Mama Concert Resources",
+    title: "MAAMA Concert Resources",
     links: [
       { id: 1, label: "Get Involved", href: "/#about" },
       { id: 2, label: "Event Gallery", href: "/#experience" },

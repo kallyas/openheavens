@@ -60,7 +60,7 @@ export default function TicketsPage() {
           <Box
             component="img"
             src="/images/logo/concert.png"
-            alt="Mama Concert"
+            alt="MAAMA Concert"
             sx={{ width: { xs: 140, md: 190 }, height: "auto", mb: 2, mx: "auto" }}
           />
           <Typography
@@ -92,10 +92,10 @@ export default function TicketsPage() {
               textShadow: "0 0 60px rgba(234, 179, 8, 0.2)",
             }}
           >
-            Mama Concert Tickets
+            MAAMA Concert Tickets
           </Typography>
           <Typography sx={{ color: "rgba(255,255,255,0.78)", maxWidth: 700, mx: "auto" }}>
-            Book your seat for <strong>Pastor Judith Babirye&apos;s Mama Concert</strong> and worship with leading voices.
+            Book your seat for <strong>MAAMA Concert</strong> and join a night of celebration, recognition, and community.
           </Typography>
         </Box>
 

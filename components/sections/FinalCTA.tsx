@@ -18,7 +18,7 @@ const FinalCTA = () => {
 
     downloadCalendar(
       EVENT_INFO.title,
-      `${EVENT_INFO.subtitle} - Join us for an unforgettable worship!`,
+      EVENT_INFO.subtitle,
       EVENT_INFO.venue.fullAddress,
       startDate,
       endDate
@@ -62,7 +62,7 @@ const FinalCTA = () => {
               See You At
             </Typography>
             <Typography variant="h1" sx={{ fontSize: { xs: '2.25rem', md: '3rem', lg: '3.75rem' }, fontWeight: 900, color: 'white', mb: 3, textTransform: 'uppercase', lineHeight: 1.1 }}>
-              Mama Concert 2026
+              MAAMA Concert 2026
             </Typography>
 
             {/* Venue */}
@@ -136,7 +136,7 @@ const FinalCTA = () => {
               transition={{ duration: 0.8, delay: 0.6 }}
             >
               <Typography sx={{ mt: 6, color: '#b8860b', fontSize: '1.125rem' }}>
-                CAD $100 &nbsp; • &nbsp; Family-Friendly &nbsp; • &nbsp; Free Parking Available
+                CAD $100 &nbsp; • &nbsp; Family-Friendly &nbsp; • &nbsp; Community Celebration In Toronto
               </Typography>
             </motion.div>
           </Box>

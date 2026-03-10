@@ -14,7 +14,7 @@ import {
   Facebook as FacebookIcon,
   Instagram as InstagramIcon,
 } from '@mui/icons-material';
-import { EVENT_INFO } from '@/lib/constants';
+import { EVENT_INFO, SOCIAL_LINKS } from '@/lib/constants';
 
 const Footer = () => {
   return (
@@ -43,7 +43,7 @@ const Footer = () => {
           <Box
             component="img"
             src="/images/logo/concert.png"
-            alt="Mama Concert"
+            alt="MAAMA Concert"
             sx={{
               width: { xs: '200px', sm: '300px', md: '400px' },
               height: 'auto',
@@ -100,7 +100,7 @@ const Footer = () => {
             {/* Resources */}
             <Grid size={{ xs: 12, sm: 4, md: 3 }}>
                 <Typography variant="h6" sx={{ fontWeight: 700, mb: 2, textTransform: 'uppercase' }}>
-                    Mama Concert Resources
+                    MAAMA Concert Resources
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
                     <a href="https://Hopevents.typeform.com/OHVol2025" style={{ color: '#9ca3af', textDecoration: 'none' }}>Get Involved</a>
@@ -114,14 +114,14 @@ const Footer = () => {
                     Social Media
                 </Typography>
                 <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, mb: 2 }}>
-                    <a href="https://www.youtube.com/hopraise/live" style={{ color: '#9ca3af', textDecoration: 'none' }}>Youtube</a>
-                    <a href="https://www.facebook.com/Hopraise/" style={{ color: '#9ca3af', textDecoration: 'none' }}>Facebook</a>
-                    <a href="https://www.instagram.com/hopraise/" style={{ color: '#9ca3af', textDecoration: 'none' }}>Instagram</a>
+                    <a href={SOCIAL_LINKS.youtube} style={{ color: '#9ca3af', textDecoration: 'none' }}>Youtube</a>
+                    <a href={SOCIAL_LINKS.facebook} style={{ color: '#9ca3af', textDecoration: 'none' }}>Facebook</a>
+                    <a href={SOCIAL_LINKS.instagram} style={{ color: '#9ca3af', textDecoration: 'none' }}>Instagram</a>
                 </Box>
                 <Box sx={{ display: 'flex', gap: 2 }}>
-                    <a href="https://www.youtube.com/hopraise/live" style={{ color: 'white' }}><YouTubeIcon /></a>
-                    <a href="https://www.facebook.com/Hopraise/" style={{ color: 'white' }}><FacebookIcon /></a>
-                    <a href="https://www.instagram.com/hopraise/" style={{ color: 'white' }}><InstagramIcon /></a>
+                    <a href={SOCIAL_LINKS.youtube} style={{ color: 'white' }}><YouTubeIcon /></a>
+                    <a href={SOCIAL_LINKS.facebook} style={{ color: 'white' }}><FacebookIcon /></a>
+                    <a href={SOCIAL_LINKS.instagram} style={{ color: 'white' }}><InstagramIcon /></a>
                 </Box>
             </Grid>
         </Grid>
@@ -132,15 +132,15 @@ const Footer = () => {
                 LOCATION
             </Typography>
             <Typography variant="h6" sx={{ fontWeight: 400 }}>
-               The International Centre,<br />
-                6900 Airport RD Toronto - Hall 5
+               {EVENT_INFO.venue.name},<br />
+                {EVENT_INFO.venue.address}
             </Typography>
         </Box>
 
         {/* Copyright */}
         <Box sx={{ textAlign: 'center', borderTop: '1px solid rgba(255,255,255,0.1)', pt: 4 }}>
           <Typography sx={{ color: '#9ca3af', fontSize: '0.875rem' }}>
-            Copyright © {new Date().getFullYear()} MAMA CONCERT TORONTO
+            Copyright © {new Date().getFullYear()} MAAMA CONCERT TORONTO
           </Typography>
         </Box>
       </Container>

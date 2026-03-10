@@ -159,7 +159,7 @@ const Header = () => {
                       fontSize: '1.2rem'
                     }}
                   >
-                    MAMA<br />CONCERT
+                    MAAMA<br />CONCERT
                   </Typography>
                 </Box>
               </Link>
@@ -189,7 +189,7 @@ const Header = () => {
               <Box sx={{ borderLeft: '1px solid #fff', padding: '10px 12px', color: '#fff' }}>
                 <Box sx={{ overflow: 'hidden', whiteSpace: 'nowrap', width: '500px', position: 'relative' }}>
                   <div className="scrolling-text">
-                    Join us for Mama Concert 2026 - Tickets at CAD $100! Experience massive worship on November 21st. Get your ticket now!
+                    Join us for MAAMA Concert 2026. Tickets are CAD $100. Celebrate and honour Black African women in healthcare on November 21st.
                   </div>
                 </Box>
               </Box>
@@ -573,7 +573,7 @@ const Header = () => {
                 fontWeight: 400,
               }}
             >
-              Copyright © 2026 MAMA CONCERT
+              Copyright © 2026 MAAMA CONCERT
             </Typography>
           </Box>
         </Box>

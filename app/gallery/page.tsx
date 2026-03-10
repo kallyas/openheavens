@@ -51,8 +51,8 @@ export default function GalleryPage() {
 
     const photo = photos[index];
     const shareUrl = `${window.location.origin}${photo.src}`;
-    const shareTitle = `Mama Concert ${selectedYear} Gallery`;
-    const shareText = 'Check out this photo from Mama Concert by Pastor Judith Babirye.';
+    const shareTitle = `MAAMA Concert ${selectedYear} Gallery`;
+    const shareText = "Check out this moment from MAAMA Concert.";
 
     try {
       if (navigator.share) {
@@ -176,7 +176,7 @@ export default function GalleryPage() {
               letterSpacing: '0.02em',
             }}
           >
-            Capturing moments of worship, fellowship, and divine encounters
+            Capturing moments of celebration, connection, and community
           </Typography>
         </Box>
 

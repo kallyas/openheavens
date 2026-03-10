@@ -14,7 +14,7 @@ export async function POST(request: Request) {
       accessToken,
       amount,
       currencyCode: "CAD",
-      description: `MAMA CONCERT 2026 - ${quantity} ticket(s)`,
+      description: `MAAMA CONCERT 2026 - ${quantity} ticket(s)`,
     })) as { id?: string };
 
     if (!order.id) {

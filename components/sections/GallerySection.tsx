@@ -6,16 +6,16 @@ import { Box, Typography } from '@mui/material';
 
 const GallerySection = () => {
   const showcaseImages = [
-    { id: 1, src: '/images/event-img/img1.jpeg', alt: 'Preview from Mama Concert' },
-    { id: 2, src: '/images/event-img/img2.jpeg', alt: 'Preview from Mama Concert' },
-    { id: 3, src: '/images/event-img/img3.jpeg', alt: 'Preview from Mama Concert' },
-    { id: 4, src: '/images/event-img/img4.jpeg', alt: 'Preview from Mama Concert' },
-    { id: 5, src: '/images/event-img/img5.jpeg', alt: 'Preview from Mama Concert' },
-    { id: 6, src: '/images/event-img/img6.jpeg', alt: 'Preview from Mama Concert' },
-    { id: 7, src: '/images/event-img/img7.jpeg', alt: 'Preview from Mama Concert' },
-    { id: 8, src: '/images/event-img/img8.jpeg', alt: 'Preview from Mama Concert' },
-    { id: 9, src: '/images/event-img/img9.jpeg', alt: 'Preview from Mama Concert' },
-    { id: 10, src: '/images/event-img/img10.jpeg', alt: 'Preview from Mama Concert' },
+    { id: 1, src: '/images/event-img/img1.jpeg', alt: 'Preview from MAAMA Concert' },
+    { id: 2, src: '/images/event-img/img2.jpeg', alt: 'Preview from MAAMA Concert' },
+    { id: 3, src: '/images/event-img/img3.jpeg', alt: 'Preview from MAAMA Concert' },
+    { id: 4, src: '/images/event-img/img4.jpeg', alt: 'Preview from MAAMA Concert' },
+    { id: 5, src: '/images/event-img/img5.jpeg', alt: 'Preview from MAAMA Concert' },
+    { id: 6, src: '/images/event-img/img6.jpeg', alt: 'Preview from MAAMA Concert' },
+    { id: 7, src: '/images/event-img/img7.jpeg', alt: 'Preview from MAAMA Concert' },
+    { id: 8, src: '/images/event-img/img8.jpeg', alt: 'Preview from MAAMA Concert' },
+    { id: 9, src: '/images/event-img/img9.jpeg', alt: 'Preview from MAAMA Concert' },
+    { id: 10, src: '/images/event-img/img10.jpeg', alt: 'Preview from MAAMA Concert' },
   ];
 
   return (
@@ -88,9 +88,9 @@ const GallerySection = () => {
             textShadow: '0 4px 20px rgba(0,0,0,0.5)',
           }}
         >
-          THE GOD
+          MAAMA
           <br />
-          OF GLORY
+          MOMENTS
         </Typography>
         <Typography
           component="h3"
@@ -103,7 +103,7 @@ const GallerySection = () => {
             textShadow: '0 2px 8px rgba(0,0,0,0.5)',
           }}
         >
-          MAMA CONCERT 2026
+          MAAMA CONCERT 2026
         </Typography>
       </Box>
 

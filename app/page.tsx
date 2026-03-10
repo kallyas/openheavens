@@ -1,5 +1,6 @@
 import HeroSection from "@/components/sections/HeroSection";
 import MissionSection from "@/components/sections/MissionSection";
+import OverviewSection from "@/components/sections/OverviewSection";
 import ArtistsSection from "@/components/sections/ArtistsSection";
 import ScriptureQuote from "@/components/sections/ScriptureQuote";
 import FeaturesMarquee from "@/components/sections/FeaturesMarquee";
@@ -16,6 +17,7 @@ export default function Home() {
     <>
       <HeroSection />
       <MissionSection />
+      <OverviewSection />
       <ArtistsSection />
       <GallerySection />
       <CommunitySection />
