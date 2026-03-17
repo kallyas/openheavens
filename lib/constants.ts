@@ -6,6 +6,7 @@ export const EVENT_INFO = {
   subtitle: "Honouring the hands that heal and celebrating the women who carry our communities.",
   date: "November 21, 2026",
   year: 2026,
+  donationCurrency: "CAD",
   venue: {
     name: "Metro Convention Centre",
     address: "255 Front St W, Toronto, ON M5V 2W6",
@@ -22,9 +23,10 @@ export const EVENT_INFO = {
   },
   ticketUrl:
     "https://www.eventbrite.ca/e/maama-concert-2026-tickets-1985203922372?aff=oddtdtcreator",
-  donationUrl: process.env.NEXT_PUBLIC_PAYPAL_DONATION_URL || "",
   livestreamUrl: "https://youtube.com/mamaconcert/live",
 };
+
+export const DONATION_PRESETS = [25, 50, 100, 250];
 
 // Featured Artists
 export const FEATURED_ARTISTS = [
@@ -221,7 +223,8 @@ export const NAV_LINKS: NavLink[] = [
   { id: 2, label: "Artists", href: "/#featuring" },
   { id: 3, label: "Gallery", href: "/gallery" },
   { id: 4, label: "Schedule", href: "/#about" },
-  { id: 5, label: "Get Tickets", href: EVENT_INFO.ticketUrl, external: true },
+  { id: 5, label: "Donate", href: "/donate" },
+  { id: 6, label: "Get Tickets", href: EVENT_INFO.ticketUrl, external: true },
 ];
 
 // Footer Links

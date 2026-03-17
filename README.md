@@ -24,18 +24,23 @@ npm run lint
 
 ## Ticket And Donation Setup
 
-Tickets are handled on Eventbrite. The homepage can optionally show a separate PayPal donation button, and `/tickets` redirects visitors straight to Eventbrite.
+Tickets are handled on Eventbrite. Donations are handled on `/donate` using PayPal Checkout, and `/tickets` redirects visitors straight to Eventbrite.
 
 1. Copy `.env.example` to `.env.local`.
-2. Add your PayPal donation URL if you want the donation button visible:
-   - `NEXT_PUBLIC_PAYPAL_DONATION_URL`
-3. Optional but recommended for metadata/share URLs:
+2. Add your PayPal credentials:
+   - `PAYPAL_CLIENT_ID`
+   - `PAYPAL_CLIENT_SECRET`
+3. Optional:
+   - `PAYPAL_ENVIRONMENT=sandbox` or `live`
+   - `PAYPAL_CURRENCY=CAD`
+4. Optional but recommended for metadata/share URLs:
    - `NEXT_PUBLIC_SITE_URL=https://your-domain.com`
-4. Restart the dev server after updating environment variables.
+5. Restart the dev server after updating environment variables.
 
 ## Key Routes
 
 - `/` home page
+- `/donate` PayPal donation page with preset and custom amounts
 - `/tickets` redirect to Eventbrite registration
 - `/gallery` event gallery
 - `/share-MC` poster sharing page with OG metadata
